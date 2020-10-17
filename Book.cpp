@@ -7,7 +7,7 @@ Book::Book(){
     SellPrice = 0;
     PrePrice = 0;
 }
-void Book::SetBook(string idBook,string nameBook,string author,double rentPrice,double sellPrice,double prePrice){
+void Book::SetBook(string idBook,string nameBook,string author,string category,double rentPrice,double sellPrice,double prePrice){
     IdBook = idBook;
     NameBook = nameBook;
     Author = author;
@@ -16,17 +16,22 @@ void Book::SetBook(string idBook,string nameBook,string author,double rentPrice,
     PrePrice = prePrice;
 }
 Book Book::SelectCategoryBook(){
-
+    Book B;
+    return B;
 }
 Book Book::SearchBook(string NameBook){
-
+    Book B;
+    return B;
 }
 Book Book::RentBook(string IdBook){
-
+    Book B;
+    return B;
 }
 Book Book::BuyBook(string IdBook){
-
+    Book B;
+    return B;
 }
 Book Book::PreOrderBook(string IdBook){
-
+    Book B;
+    return B;
 }  

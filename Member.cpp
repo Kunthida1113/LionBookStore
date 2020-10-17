@@ -1,34 +1,36 @@
 #include "Member.h"
 Member::Member(){
-    Name = "";
     Surname = "";
+    Lastname = "";
     IdMember = "";
     password = "";
     Type = "";
     Status = "";
     IdCredit = "";
 }
-Member::Member(string Name,string Surname,string IdMember,string password,string Type,string Status,string IDCreditCard){
+Member::Member(string surname,string lastname,string idMember,string pass,string type,string status,string idCreditCard){
   
 }
-Book Member::SearchNameBook(string NameBook){
+Book Member::SearchNameBook(string nameBook){
 
 }
-void Member::SetMember(string Name,string Surname,string password){
+void Member::SetMember(string surname,string lastname,string pass){
+    Surname = surname;
+    Lastname = lastname;
+    password = pass;
+}
+Member Member::GetMember(string idMember){
 
 }
-Member Member::GetMember(string IdMember){
+void Member::SetType(string type){
 
 }
-void Member::SetType(string Type){
+bool Member::Pay(string amountofMoney,string idCreditCard,string idBill){
 
 }
-bool Member::Pay(string amountofMoney,string IDCreditCard,string IDBill){
+void Member::SearchUser(string idUser,string pass){
 
 }
-void Member::SearchUser(string IdUser,string password){
-
-}
-Book Member::RentBooks(string IdBook){
+Book Member::RentBooks(string idBook){
     
 }
