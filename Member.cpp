@@ -1,15 +1,21 @@
 #include "Member.h"
 Member::Member(){
-    Surname = "";    
-    Lastname = "";
-    IdMember = "";
-    password = "";
-    Type = "";
-    Status = "";
-    IdCredit = "";
+    Surname = " ";    
+    Lastname = " ";
+    IdMember = " ";
+    password = " ";
+    Type = " ";
+    Status = " ";
+    IdCreditCard = " ";
 }
-Member::Member(string Surname,string Lastname,string IdMember,string password,string Type,string Status,string IDCreditCard){
-  
+Member::Member(string surname,string lastname,string idMember,string pass,string type,string status,string idCredit{
+       Surname = surname ;
+       Lastname = lastname;
+       IdMember = idMember;
+       password = pass;
+       Type = type ;
+       Status = status;
+       IdCredit
 }
 Book Member::SearchNameBook(string NameBook){
 
