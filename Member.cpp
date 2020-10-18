@@ -8,6 +8,7 @@ Member::Member(){
     Status = "";
     IdCredit = "";
 }
+/*
 Member::Member(string Name,string Surname,string IdMember,string password,string Type,string Status,string IDCreditCard){
   
 }
@@ -31,4 +32,4 @@ void Member::SearchUser(string IdUser,string password){
 }
 Book Member::RentBooks(string IdBook){
     
-}
+}*/

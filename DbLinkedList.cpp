@@ -25,9 +25,9 @@ DbLinkedList::DbLinkedList(){
     count=0;
 }
 DbLinkedList::~DbLinkedList(){
-	for(int i=1;i<count;i++){
-		Node *tmp = this->head;
-		tmp =this->head->link;
+	for(int i=0;i<count;i++){
+		Node *tmp = head;
+		tmp =head->link;
 		delete tmp;
 		tmp = NULL;
 	}
@@ -42,8 +42,8 @@ void DbLinkedList::AddBook(Book b){
 		tail = NewNode;
 		count++;
 	}else{
-		tail->link = NewNode;
 		NewNode->plink = tail;
+		tail->link = NewNode;
 		tail = NewNode;
 		count++;
 	}
@@ -56,9 +56,25 @@ void DbLinkedList::AddMember(Member m){
 		tail = NewNode;
 		count++;
 	}else{
-		tail->link = NewNode;
 		NewNode->plink = tail;
+		tail->link = NewNode;
 		tail = NewNode;
 		count++;
 	}
 }
+int DbLinkedList::size(){
+	return count;
+}
+void DbLinkedList::ShowCategory(string cate){
+	for(Node *tmp=head;tmp!=NULL;tmp=tmp->link){
+		if(tmp->B.getCate()==cate){
+			cout<<tmp->B.getId()<<"\t"<<tmp->B.getName()<<endl;
+		}
+	}
+}
+void DbLinkedList::ShowAllBook(){
+	for(Node *tmp=head;tmp!=NULL;tmp=tmp->link){
+			cout<<tmp->B.getId()<<endl;
+	}
+}
+
