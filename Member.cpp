@@ -17,8 +17,14 @@ Book Member::SearchNameBook(string NameBook){
 void Member::SetMember(string Name,string Surname,string password){
 
 }
-Member Member::GetMember(string IdMember){
-
+Member Member::getMember(string IdMember){
+    
+}
+string Member::getId(){
+    return IdMember;
+}
+string Member::getPass(){
+    return password;
 }
 void Member::SetType(string Type){
 

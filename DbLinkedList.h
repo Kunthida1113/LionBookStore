@@ -1,3 +1,5 @@
+#ifndef DBLINKEDLIST_H
+#define DBLINKEDLIST_H
 #include<iostream>
 #include"Book.h"
 #include"Member.h"
@@ -27,5 +29,7 @@ class DbLinkedList
         ~DbLinkedList();
         void AddBook(Book b);
         void AddMember(Member m);
-
+        bool LoginMember(string idUser,string password); //เพิ่ม
+        bool LoginStaff(string idUser,string password); //เพิ่ม
 };
+#endif

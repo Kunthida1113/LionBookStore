@@ -60,3 +60,17 @@ void DbLinkedList::AddMember(Member m){
 		count++;
 	}
 }
+bool DbLinkedList::LoginMember(string idUser,string password){
+	for(Node *tmp=head; tmp != NULL; tmp=tmp->link){
+		if(tmp->M.getId() == idUser && tmp->M.getPass() == password){
+			return true;
+		}
+	}
+}
+bool DbLinkedList::LoginStaff(string idUser,string password){
+	for(Node *tmp=head; tmp != NULL; tmp=tmp->link){
+		if(tmp->S.getId() == idUser && tmp->S.getPass() == password){
+			return true;
+		}
+	}
+}
