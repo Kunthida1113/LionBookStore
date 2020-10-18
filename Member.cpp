@@ -1,6 +1,6 @@
 #include "Member.h"
 Member::Member(){
-    Surname = " ";    
+    Name = " ";    
     Lastname = " ";
     IdMember = " ";
     password = " ";
@@ -8,20 +8,22 @@ Member::Member(){
     Status = " ";
     IdCreditCard = " ";
 }
-Member::Member(string surname,string lastname,string idMember,string pass,string type,string status,string idCredit{
-       Surname = surname ;
+Member::Member(string name,string lastname,string idMember,string pass,string type,string status,string idCredit{
+       Name = name ;
        Lastname = lastname;
        IdMember = idMember;
        password = pass;
        Type = type ;
        Status = status;
-       IdCredit
+       IdCreditcard  = idCredit;
 }
 Book Member::SearchNameBook(string NameBook){
 
 }
-void Member::SetMember(string Name,string Surname,string password){
-
+void Member::SetMember(string name,string lastname,string pass){
+           Name = name;
+           Lastname = lastname ;
+           password = pass;
 }
 Member Member::GetMember(string IdMember){
 
