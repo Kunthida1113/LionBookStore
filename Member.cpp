@@ -8,14 +8,14 @@ Member::Member(){
     Status = " ";
     IdCreditCard = " ";
 }
-Member::Member(string name,string lastname,string idMember,string pass,string type,string status,string idCredit{
+Member::Member(string name,string lastname,string idMember,string pass,string type,string status,string idCredit){
        Name = name ;
        Lastname = lastname;
        IdMember = idMember;
        password = pass;
        Type = type ;
        Status = status;
-       IdCreditcard  = idCredit;
+       IdCreditCard  = idCredit;
 }
 Book Member::SearchNameBook(string NameBook){
 
