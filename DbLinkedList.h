@@ -3,7 +3,7 @@
 #include"Member.h"
 #include"Staff.h"
 using namespace std;
-class LikedList
+class DbLinkedList
 {
     private:
         class Node{
@@ -12,6 +12,7 @@ class LikedList
                 Member M;
                 Staff S;
                 Node *link;
+                Node *plink;
                 Node();
                 Node(Book b,Member m, Staff s);
                 void setBook(Book b);
@@ -22,8 +23,8 @@ class LikedList
         Node *tail;
         int count;
     public:
-        LinkedList();
-        ~LinkedList();
+        DbLinkedList();
+        ~DbLinkedList();
         void AddBook(Book b);
         void AddMember(Member m);
 

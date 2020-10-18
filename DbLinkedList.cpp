@@ -1,19 +1,30 @@
-#include"LinkedList.h"
-LikedList::Node::Node(){
+#include"DbLinkedList.h"
+DbLinkedList::Node::Node(){
     link = NULL;
+	plink = NULL;
 }
-LikedList::Node::Node(Book b,Member m, Staff s){
+DbLinkedList::Node::Node(Book b,Member m, Staff s){
     this->B = b;
     this->M = m;
     this->S = s;
     link = NULL;
+	plink = NULL;
 }
-LinkedList::LinkedList(){
+void DbLinkedList::Node::setBook(Book b){
+	this->B = b;
+}
+void DbLinkedList::Node::setMember(Member m){
+	this->M = m;
+}
+void DbLinkedList::Node::setStaff(Staff s){
+	this->S = s;
+}
+DbLinkedList::DbLinkedList(){
     this->head=NULL;
     this->tail=NULL;
     count=0;
 }
-LinkedList::~LinkedList(){
+DbLinkedList::~DbLinkedList(){
 	for(int i=1;i<count;i++){
 		Node *tmp = this->head;
 		tmp =this->head->link;
@@ -23,7 +34,7 @@ LinkedList::~LinkedList(){
 	this->head = NULL;
 	this->tail = NULL;
 }
-void LinkedList::AddBook(Book b){
+void DbLinkedList::AddBook(Book b){
 	Node *NewNode = new Node();
 	NewNode->setBook(b);
 	if(head == NULL){
@@ -31,11 +42,12 @@ void LinkedList::AddBook(Book b){
 		tail = NewNode;
 	}else{
 		tail->link = NewNode;
+		NewNode->plink = tail;
 		tail = NewNode;
 		count++;
 	}
 }
-void LinkedList::AddMember(Member m){
+void DbLinkedList::AddMember(Member m){
 	Node *NewNode = new Node();
 	NewNode->setMember(m);
 	if(head == NULL){
@@ -43,6 +55,7 @@ void LinkedList::AddMember(Member m){
 		tail = NewNode;
 	}else{
 		tail->link = NewNode;
+		NewNode->plink = tail;
 		tail = NewNode;
 		count++;
 	}

@@ -1,7 +1,7 @@
 #include "Member.h"
 Member::Member(){
-    Name = "";
-    Surname = "";
+    Surname = "";    
+    Lastname = "";
     IdMember = "";
     password = "";
     Type = "";
