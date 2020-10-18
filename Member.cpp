@@ -8,7 +8,7 @@ Member::Member(){
     Status = "";
     IdCredit = "";
 }
-Member::Member(string Name,string Surname,string IdMember,string password,string Type,string Status,string IDCreditCard){
+Member::Member(string Surname,string Lastname,string IdMember,string password,string Type,string Status,string IDCreditCard){
   
 }
 Book Member::SearchNameBook(string NameBook){
