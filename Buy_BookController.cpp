@@ -16,6 +16,6 @@ double Buy_BookController::Calculate(Member m,Book b){
 	
 }
 
-bool Buyr_BookController::Pay(string AmountofMoney,string IDCreditCard,string IDBill){
+bool Buy_BookController::Pay(string AmountofMoney,string IDCreditCard,string IDBill){
 	
 }
