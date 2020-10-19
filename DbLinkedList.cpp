@@ -40,6 +40,7 @@ void DbLinkedList::AddBook(Book b){
 	if(head == NULL){
 		head = NewNode;
 		tail = NewNode;
+		count++;
 	}else{
 		tail->link = NewNode;
 		NewNode->plink = tail;
@@ -53,6 +54,7 @@ void DbLinkedList::AddMember(Member m){
 	if(head == NULL){
 		head = NewNode;
 		tail = NewNode;
+		count++;
 	}else{
 		tail->link = NewNode;
 		NewNode->plink = tail;
@@ -61,14 +63,17 @@ void DbLinkedList::AddMember(Member m){
 	}
 }
 bool DbLinkedList::LoginMember(string idUser,string password){
-	for(Node *tmp=head; tmp != NULL; tmp=tmp->link){
+	Node *tmp;
+	for(tmp=head; tmp != NULL; tmp=tmp->link){
 		if(tmp->M.getId() == idUser && tmp->M.getPass() == password){
 			return true;
 		}
 	}
+	return false;
 }
 bool DbLinkedList::LoginStaff(string idUser,string password){
-	for(Node *tmp=head; tmp != NULL; tmp=tmp->link){
+	Node *tmp;
+	for(tmp=head; tmp != NULL; tmp=tmp->link){
 		if(tmp->S.getId() == idUser && tmp->S.getPass() == password){
 			return true;
 		}
