@@ -1,3 +1,5 @@
+#ifndef MEMBER_H
+#define MEMBER_H
 #include<iostream>
 #include<string>
 #include "Book.h"
@@ -22,3 +24,4 @@ class Member{
 		void SearchUser(string idUser,string pass);
 		Book RentBooks(string idBook);
 };
+#endif
