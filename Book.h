@@ -3,7 +3,6 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
 class Book{
 	private:
 		string IdBook;
@@ -26,9 +25,9 @@ class Book{
 		double getBuyPrice();
 		double getPrePrice();
 		Book SelectCategoryBook();
-		Book SearchBook(string NameBook);
-		Book RentBook(string IdBook);
-		Book BuyBook(string IdBook);
-		Book PreOrderBook(string IdBook);    
+		Book SearchBook(string nameBook);
+		Book RentBook(string idBook);
+		Book BuyBook(string idBook);
+		Book PreOrderBook(string idBook);    
 };
 #endif

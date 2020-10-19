@@ -47,15 +47,15 @@ double Book::getPrePrice(){
 Book Book::SelectCategoryBook(){
 
 }
-Book Book::SearchBook(string NameBook){
+Book Book::SearchBook(string nameBook){
 
 }
-Book Book::RentBook(string IdBook){
+Book Book::RentBook(string idBook){
 
 }
-Book Book::BuyBook(string IdBook){
+Book Book::BuyBook(string idBook){
 
 }
-Book Book::PreOrderBook(string IdBook){
+Book Book::PreOrderBook(string idBook){
 
 }  
