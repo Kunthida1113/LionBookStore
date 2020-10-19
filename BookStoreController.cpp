@@ -104,6 +104,7 @@ void BookStoreController::SelectCategoryBook(){
     cout<<"======================================"<<endl;
     cout<<"Select Menu(1-11): ";
     cin>>menuCate;
+    cout<<endl;
     if(menuCate==1){
         cate = "Cartoon";
     }else if(menuCate==2){
@@ -126,11 +127,8 @@ void BookStoreController::SelectCategoryBook(){
         cate = "Techno";
     }
     BookList->ShowCategory(cate);
-
 }
-void BookStoreController::showAll(){
-    BookList->ShowAllBook();
-}
+/*
 Book BookStoreController::SearchBook(string NameBook){
 
 }
@@ -142,4 +140,4 @@ double BookStoreController::Calculate(Member m,Book b){
 }
 bool BookStoreController::Pay(string AmountofMoney,string IDCreditCard,string IDBill){
     
-}
+}*/

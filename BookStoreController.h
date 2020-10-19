@@ -3,6 +3,7 @@
 #include<iostream>
 #include<string>
 #include<fstream>
+#include<sstream>
 #include"Book.h"
 #include"Member.h"
 #include"DbLinkedList.h"
@@ -14,11 +15,10 @@ class BookStoreController{
 		BookStoreController();
 		~BookStoreController();
 		void LoadInfoBook();
-		void showAll();
 		void SelectCategoryBook();
-		Book SearchBook(string NameBook);
+/*		Book SearchBook(string NameBook);
 		Book RentBook(string IdBook);
 		double Calculate(Member m,Book b);
-		bool Pay(string AmountofMoney,string IDCreditCard,string IDBill);
+		bool Pay(string AmountofMoney,string IDCreditCard,string IDBill);*/
 };
 #endif

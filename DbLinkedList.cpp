@@ -62,3 +62,11 @@ void DbLinkedList::AddMember(Member m){
 		count++;
 	}
 }
+void DbLinkedList::ShowCategory(string cate){
+	for(Node *temp=head;temp!=NULL;temp=temp->link){
+		if(temp->B.getCate()==cate){
+			cout<<temp->B.getIdBook()<<left<<setw(10)<<temp->B.getNameBook()<<left<<setw(20)
+			<<temp->B.getAuthor()<<left<<setw(10)<<endl;
+		}
+	}
+}

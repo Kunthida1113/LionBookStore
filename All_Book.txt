@@ -1,0 +1,199 @@
+00001962,A Wrinkle in Time,Madeleine L'Engle,1962,315.50,1263.00
+00011964,Charlie and the Chocolate Factory,Roald Dahl,1964,296.75,1105.50
+00021993,The Batman Adventures: Mad Love,Paul Dini,1993,268.50,1074.00
+00032001,The Art of Spirited Away,Hayao Miyazaki,2001,277.75,1121.50
+00042002,Tim Burton's Nightmare Before Christmas,Frank T.Thompson,2002,319.00,1160.75
+00052004,The Art of Howl's Moving Castle,Hayao Miyazaki,2004,249.25,947.75
+00062005,The Lord of the Rings Sketchbook,Alan Lee,2005,306.75,1058.25
+00072018,The Art of Avengers: Infinity War,Eleni Roussos,2018,283.00,1014.75
+00082018,The Art of Black Panther,Roussos,2018,242.00,1012.25
+00092020,The Art of Star Wars: The Rise of Skywalker,Phil Szostak,2020,331.00,1116.75
+00102019,The Cartoon Guide to Biology,Larry Gonick,2019,65.00,405.25
+00112014,Cartoon Faces (Cartoon Academy),Christopher Hart,2014,52.75,202.25
+00121984,How To Draw Comics The Marvel Way,Stan Lee,1984,98.50,598.00
+00132019,Not Sparking Joy,Jerry Scott,2019,67.25,591.00
+00142020,Solutions and Other Problems,Allie Brosh,2020,192.75,935.00
+00152020,The 100 Greatest Looney Tunes Cartoons,Jerry Beck,2020,99.50,716.50
+00162010,How Come I Always Get Blamed for the Things I Do?,Brian Crane,2010,31.25,181.50
+00172016,Blank Comic Book For Kids,Blank Books 'N' Journals,2016,49.50,202.25
+00182015,The Cartoon Introduction to Philosophy,Michael F. Patton,2015,144.25,560.75
+00192020,Chonky Cats,Chonky Cats,2020,32.25,359.75
+01001784,Clarissa,Samuel Richardson,1748,81.25,485.50
+01011816,Emma,Jane Austen,1816,61.00,314.50
+01021847,Jane Eyre,Charlotte Brontë,1847,62.75,315.500
+01031889,Three Men in a Boat,Jerome K Jerome,1889,94.75,573.25
+01041895,The Red Badge of Courage,Stephen Crane,1895,57.25,357.75
+01051900,Sister Carrie,Theodore Dreiser,1900,61.50,424.00
+01061915,The Good Soldier,Ford Madox Ford,1915,59.00,394.50
+01071925,Mrs Dalloway,Virginia Woolf,1925,67.50,445.00
+01081948,The Heat of the Day,Elizabeth Bowen,1948,98.25,598.75
+01091988,The Beginning of Spring,Penelope Fitzgerald,1988,84.50,549.75
+01102017,Spooky Pookie (Little Pookie),Sandra Boynton,2017,47.50,288.25
+01112003,Room on the Broom,Julia Donaldson,2003,36.25,159.75 
+01122009,Dr. Seuss's Beginner Book Collection,Dr.Seuss,2009,289.00,1250.50
+01131964,The Giving Tree,Shel Silverstein,1964,42.00,265.00
+01142007,The Classic Treasury of Aesop's Fables,Aesop,2007,65.50,302.25
+01151964,A Wrinkle in Time,Madeleine L'Engle,1964,65.50,302.50
+01162017,Bridge to Terabithia,Katherine Paterson,2017,31.50,325.25
+01172019,Bear Came Along,Richard T. Morris,2019,125.25,678.50
+01182018,Hello Lighthouse Hardcover,Sophie Blackall,2018,101.00,632.75
+01192017,Wolf in the Snow,Matthew Cordell,2017,145.75,702.50
+02002017,Skills for Success,Kevin McClure,2017,61.00,346.75
+02012018,The Oxford Picture Dictionary,Norma Shapiro,2018,150.25,817.00
+02022018,Everybody Up,Lynne Robertson,2018,64.59,365.75
+02032018,Smart Choice,Ken Wilson,2018,84.50,470.25
+02042019,American Headway,John and Liz Soars,2019,93.75,570.00
+02052019,Practical English Usage,Michael Swan,2019,212.75,931.00
+02062019,English Time,Melanie Graham,2019,63.25,335.00
+02072020,Exploring Psychology in Language Learning and Teaching,Stephen Ryan,2020,125.25,826.50
+02082020,Inside Listening & Speaking,Lawrence Lawson,2020,121.00,536.75
+02092020,IELTS Masterclass,Ben Wetz,2020,84.50,428.75
+02102017,Organization and Administration in Higher Education,Patrick J. Schloss,2017,783.00,1548.25
+02112020,Good Questions for Math Teaching,Peter Sullivan and Pat Lilburn,2020,522.00,1120.25
+02122020,Whole Brain Teaching: Virtual Instruction QuickStart,Chris Biffle,2020,88.50,497.00
+02132020,Teaching in the Online Classroom: Surviving and Thriving in the New Normal,Doug Lemov,2020,98.75,621.00
+02142020,Teaching for Deeper Learning,Jay McTighe and Harvey F. Silver,2020,102.00,870.75
+02152020,Baby Bath Books Mega Set,BabyBibi Store,2020,674.75,1105.00
+02162020,The Manifesto for Teaching Online,Peter Evans,2020,99.75,778.75
+02172019,Teaching When the World Is on Fire,Lisa Delpit,2020,102.00,809.75
+02182019,Lisa Delpit,John R. Thelin,2019,759.00,1230.75
+02192003,The Case for Classical Christian Education,Wilson Douglas,2003,94.25,747.50
+03001547,The Prince and The Puaper,Mark Twain,1547,212.75,931.00
+03011991,Little Dorrit,Charles Dickens,1991,84.50,549.75
+03021991,Amelia Earhart,Janet Hardy,1991,98.25,598.75
+03031997,John F Kennedy,Anne Collins,1997,252.75,998.75
+03041998,The Selfish Giant,Oscar Wilde,1998,53.75,474.00
+03051999,Sleeping Beauty,Sue Arengo,1999,8 4.59,465.75
+03062000,Troll and Other Stories,Sarah Walker,2000,57.25,357.75
+03072011,The Bad House,Paul Shipton,2011,80.75,442.50
+03082017,Eat Pray Love,Elizabeth Gilbert,2017,123.25,568.75
+03092020,Family and Friends,Helen Casey,2020,64.59,365.75
+03102020,America in the World: A History of U.S. Diplomacy and Foreign Policy,Robert B. Zoellick,2020,144.00,923.75
+03112020,The Permanent Coup,Lee Smith,2020,78.50,435.75
+03122020,America through Foreign Eyes,Jorge G. Castañeda,2020,74.25,654.00
+03132014,Complete Latin American Spanish,Juan Kattan-Ibarra,2014,97.50,997.00
+03142010,Integrated Korean,Hyo Sang Lee,2010,69.25,467.00
+03152018,Beautiful Short Stories in English and Korean - Bilingual,Hye-min Choi,2018,70.25,465.75
+03161986,J'Irai Cracher Sur Vos Tombes,B. Vian and Boris Vian,1986,100.00,559.25
+03172018,100 French Short Stories,Christian Stahl,2018,97.50,467.00
+03182019,La duquesa,Danielle Steel,2019,49.50,375.50
+03192009,The Song of the Cid,Maria Rosa Menocal,2009,97.75,609.00
+04001980,A People's History of the United States,Howard Zinn,1980,43.25,371.50
+04011997,Guns Germs and Steel: The Fates of Human Societies,Jared Diamond,1997,31.20,299.00
+04022012,Sadda Punjab: A Comprehensive Book on General Knowledge of Punjab,Munish Jindal,2012,48.75,429.25
+04032010,Advance Objective General Knowledge,R.S. Aggarwal,2010,49.75,441.50
+04042017,The Fun Knowledge Encyclopedia,Bill O'Neill,2017,65.75,511.00
+04052018,The Giant Book Of Obscure Facts,Jake Jacobs,2018,48.25,397.75
+04062018,853 Hard To Believe Facts,Nayden Kostov,2018,34.22,444.75
+04072019,Really Interesting Stuff You Don't Need to Know: 1,500 Fascinating Facts,David Fickes,2019,55.50,497.75
+04082020,5 Minute Smarter,Larry Baz,2020,35.25,379.25
+04092020,Interesting Stories For Curious People,Bill O'Neill,2020,41.75,435.50
+04102015,Lift-the-flap General Knowledg,Marco Palmieri,2015,88.50,509.00
+04112019,Knowledge Genius!,DK,2019,53.50,475.00
+04122016,General Knowledge Quiz Book for Seniors: 1001 Questions,Joe Jacobs,2016,37.25,311.75
+04132020,The Wonder Book of Knowledge,Henry Chase Hill,2020,78.50,509.00
+04142020,Science and Cooking,Pia Sörensen,2020,551.75,1091.00
+04152020,A Place for Everything,Judith Flanders,2020,210.00,842.25
+04162014,SPANISH - GENERAL KNOWLEDGE WORKOUT,Clic-books Digital Media,2014,48.25,397.75
+04172020,God-Level Knowledge Darts: Life Lessons from the Bronx,Desus & Mero,2020,74.50,811.00
+04182017,Nursing Informatics and the Foundation of Knowledge,Dee McGonigle & Kathleen Mastrian,2017,744.00,1089.75
+04192020,The Knowledge Gap,Natalie Wexler,2020,39.00,373.42
+05002000,The 4-Hour Body,Timothy Ferriss,2000,31.25,135.00
+05012005,Starting Strength,Lon Kilgore,2005,31.50,139.75
+05022008,Nudge: Improving Decisions About Health, Wealth, and Happiness, Richard H. Thaler,2008,32.50,242.50
+05032011,Wheat Belly,William Davis,2011,57.25,431.00
+05042013,Weight Loss Secrets,Lise Gottlieb,2013,44.50,312.00
+05052016,When Breath Becomes Air,Paul Kalanithi,2016,35.25,206.50
+05062017,Why We Sleep: Unlocking the Power of Sleep and Dreams,Matthew Walker,2017,57.25,410.75
+05072020,Think Like a Monk,Jay Shetty,2020,68.75,524.00
+05082020,You Should See Me in a Crown,Leah Johnson,2020,43.25,399.75
+05092020,Heroes Wear Masks,Ernie Kwiat,2020,58.75,452.25
+05101997,Understanding Health Insurance,Michelle Green,1997,700.00,1697.75
+05112020,New Dimensions in Women's Health,Judith H. LaRosa,2020,1250.00,2620.50
+05122018,Healthy Living Steps,TTWII Books,2018,68.75,524.00
+05132010,Emergency Public Health,Girish Bobby Kapur and Jeffrey P. Smith,2010,599.00,1339.75
+05142013,Mind/Body Health,Lee Smith,2013,1110.25,2152.50
+05152020,Hand Sanitizer Recipes,Paul S. Leland,2020,31.25,135.00
+05162020,Mental Health Journal,Holly Books,2020,42.50,218.00
+05172020,Love Your Gut,Megan Rossi PhD,2020,72.50,622.00
+05182020,This Is Your Brain on Food,Uma Naidoo MD,72020,8.50,642.00
+05192020,Own Your Health,Glen Merzer & CHEF AJ,2020,77.00,622.00
+06001968,The Black Arts,Richard Cavendish,1968,53.75,478.95
+06011973,The Trivium,Miriam Joseph,1973,44.25,312.75
+06022004,News Flash,Bonnie M. Anderson,2004,65.50,599.25
+06032007,News as Entertainment,Daya Kishan Thussu,2007,96.25,977.75
+06042008,Meditations on Violence: A Comparison of Martial Arts Training & Real World Violence,Rory Miller,2008,75.50,504.75
+06052013,Mortal Arts,Anna Lee Huber,2013,52.00,443.50
+06062014,Arts & Entertainments,Christopher Beha,2014,31.59,298.44
+06072015,he Shattered Court,M.J. Scott,2015,47.00,377.25
+06082019,The Rival,Richard Murphy,2019,42.50,389.75
+06092020,These Women,Ivy Pochoda,2020,89.50,795.25
+06102010,The Liberal Arts Tradition,Bruce A. Kimball,2010,1234.50,2495.75
+06112008,Teaching Film and TV Documentary,Sarah Casey Benyahia,2008,764.25,1575.00
+06121999,Seven Up (BFI TV Classics),Stella Bruzzi,1999,52.00,658.50
+06132020,The Art of Lamination,Jimmy Griffin,2020,49.50,311.00
+06142018,Gardner's Art through the Ages,Fred S. Kleiner,2018,2813.25,3531.00
+06152020,The Art of Doing Science and Engineering: Learning to Learn,Bret Victor,2020,98.75,727.75
+06162007,The Art Of War,Sun Tzu,2007,49.50,421.00
+06172016,Art Since 1900,Hal Foster,2016,2999.75,4071.00
+06182017,Big Ideas,Infotainment Press,2017,32.50,350.00
+06192017,Notes,Infotainment Press,2017,32.50,350.00
+07001719,Robinson Crusoe,Daniel Defoe,1719,81.25,489.00
+07011726,Gulliver’s Travels,Jonathan Swift,1726,75.00,486.75
+07021749,Tom Jones,Henry Fielding,1749,60.50,313.75
+07031818,Nightmare Abbey,Thomas Love Peacock,1818,66.00,498.00
+07041838,The Narrative of Arthur Gordon Pym of Nantucket,Edgar Allan Poe,1838,53.75,474.00
+07051845,Sybil,Benjamin Disraeli,1845,94.75,476.25
+07061903,The Call of the Wild,Jack London,1903,125.00,505.75
+07071908,The Wind in the Willows,Kenneth Grahame,1908,80.75,442.50
+07081925,Gentlemen Prefer Blondes,Anita Loos,1925,123.25,568.75
+07092020,Theory of Love,JittiRain,2020,145.00,619.00
+07102020,Blue Kiss,Hideko_Sunshine,2020,87.50,409.00
+07112018,A Fool's Guide to Making A Fool of Yourself,Chalatep Nabangchang,2018,67.50,279.00
+07122010,Handbook to Literature,William Harmon,2010,240.50,997.50
+07132016,The Norton Introduction to Literature,The Norton Introduction to Literature,2016,219.50,1540.25
+07142018,The Norton Anthology of English Literature,Stephen Greenblatt,2018,842.50,2391.62
+07152019,How to Read Literature Like a Professor,Thomas C Foster,2019,137.50,960.75
+07162018,The Norton Anthology of World Literature,Martin Puchner,2018,985.00,2644.75
+07172020,The Tower of Nero,Rick Riordan,2020,41.75,623.50
+07182020,A Time for Mercy,John Grisham,2020,98.75,537.50
+07191678,The Pilgrim’s Progress,John Bunyan,1678,152.75,598.75
+08002004,The New Best Recipe,Cook's Illustrated Magazine,2004,62.25,302.00
+08012004,Baking Illustrated,Cook's Illustrated Magazine,2004,42.75,219.25
+08022006,Bitchfest,Lisa Jervis,2006,35.75,209.50
+08032005,O's Little Book of Happiness,O'The Oprah Magazine,2005,59.75,315.20
+08042009,I Love Your Style,Amanda Brooks,2009,41.75,378.00
+08052014,The Last Magazine,Michael Hastings,2014,31.50,189.50
+08062018,Murder On Magazine,Julie Smith,2018,36.75,221.50
+08072016,Vogue Coloring Book,Vogue Magazine,2016,54.75,252.75
+08082018,Vogue x Music,Vogue Magazine,2018,54.75,252.75
+08092019,Thriller Magazine,Ammar Habib,2019,54.00,252.50
+08102020,Christmas Ideals,Melinda Lee Rathjen,2020,36.25,295.75
+08122014,Ghost Hunting,The Editors of Ghost Hunting,2014,31.50,248.00
+08132020,S&S Off Road Magazine,Sherri Kukla,2020,36.25,295.75
+08142020,The New Yorker Magazine,NewYorker,2020,59.75,315.20
+08152020,Vogue Knitting,Carla Scott,2020,54.75,252.75
+08162020,kühlt Graffiti Kunst Street Art Malbuch,Radidros Book,2020,35.50,249.25
+08162020,Promo Print Magazin, Joachim Schatke,2020,31.50,189.50
+08182015,ONE PIECE magazine,Shueisha,2015,35.75,209.50
+08192010,Popteen,Kadokawa Haruki Corporation,2010,,59.75,315.20
+09001992,Snow Crash,Neal Stephenson,1992,196.50,838.75
+09011996,Being Digital,Nicholas Negroponte,1996,59.75,497.00
+09022005,The Google Story,David A. Vise,2005,66.50,454.25
+09032009,Daemon,Daniel Suarez,2009,75.00,599.50
+09042015,Rise of the Robots,Martin Ford,2015,66.00,298.50
+09052018,Bad Blood: Secrets and Lies in a Silicon Valley Startup,John Carreyrou,2018,50.50,499.50
+09062018,Machine Platform Crowd,Andrew McAfee,2018,54.25,399.75
+09072019,Together: AI and Human. On The Same Side,Zoltan Andrejkovics,2019,65.25,466.00
+09082020,2030: How Today's Biggest Trends Will Collide and Reshape the Future of Everything,Mauro F. Guillén,2020,67.00,473.50
+09092020,Competing in the Age,Marco Iansiti,2020,58.75,442.50
+09102020,Introduction to Geospatial Technologies,Richard W. Hamming,2020,142.50,717.50
+09112019,Automotive Technology,James D. Halderman,2019,987.25,2184.00
+09122015,Modern Automotive Technology,James E. Duffy,2015,97.50,748.75
+09132019,Technology In Action Introductory,Alan Evans,2019,744.25,1922.50
+09142020,Using Technology with Elementary Music Approaches,Amy M. Burns,2020,194.50,842.50
+09152018,Contraceptive Technology,Robert A. Hatcher,2018,1014.75,2679.50
+09162019,The Future Is Faster Than You Think,Steven Kotler,2019,143.00,872.25
+09172019,Technology for Success and Shelly Cashman Series Microsoft Office 365 & Office 2019,Jennifer T. Campbell,2019,466.25,1351.00
+09182014,Milady Standard Nail Technology,Milady,2014,222.50,903.50
+09192020,Become an Effective Software Engineering Manager,Dr. Stanier,2020,1100.00,1246.00

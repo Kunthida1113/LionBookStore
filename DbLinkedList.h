@@ -1,4 +1,8 @@
+#ifndef DBLINKEDLIST_H
+#define DBLINKEDLIST_H
 #include<iostream>
+#include<string>
+#include<iomanip>
 #include"Book.h"
 #include"Member.h"
 #include"Staff.h"
@@ -27,4 +31,6 @@ class DbLinkedList
         ~DbLinkedList();
         void AddBook(Book b);
         void AddMember(Member m);
+        void ShowCategory(string cate);
 };
+#endif
