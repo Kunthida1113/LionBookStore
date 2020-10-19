@@ -8,6 +8,6 @@ class Buy_BookController{
 		Book SelectCategoryBook();
 		Book SerachBook(string NameBook);
 		Book BuyBook(string IdBook);
-		double Calculate(Member m,Book b);
+		double Calculate(Book b);
 		bool Pay(string AmountofMoney,string IDCreditCard,string IDBill);
 };

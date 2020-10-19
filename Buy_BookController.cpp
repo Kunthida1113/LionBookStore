@@ -12,8 +12,11 @@ Book Buy_BookController::BuyBook(string IdBook){
 	
 }
 
-double Buy_BookController::Calculate(Member m,Book b){
+double Buy_BookController::Calculate(Book b){
+	double sum;
+	sum = b.getBuyPrice() * 1;
 	
+	return sum;
 }
 
 bool Buy_BookController::Pay(string AmountofMoney,string IDCreditCard,string IDBill){
