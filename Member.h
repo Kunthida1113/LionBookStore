@@ -1,24 +1,24 @@
 #include<iostream>
 #include<string>
-#include "Book.h"
+//#include "Book.h"
 using namespace std;
 class Member{
 	private:
-		string Surname;
+		string Name;
 		string Lastname;		
 		string IdMember;
 		string password;
 		string Type;
 		string Status;
-		string IdCredit;
+		string IdCreditCard;
 	public:
 		Member();
-		Member(string surname,string lastname,string idMember,string pass,string type,string status,string idCreditCard);
+		Member(string name,string lastname,string idMember,string pass,string type,string status,string idCredit);
 		Book SearchNameBook(string nameBook);
-		void SetMember(string surname,string lastname,string pass);
+		void SetMember(string name,string lastname,string pass);
 		Member GetMember(string idMember);
 		void SetType(string type);
-		bool Pay(string amountofMoney,string idCreditCard,string idBill);
+		bool Pay(string amountofMoney,string idCredit,string idBill);
 		void SearchUser(string idUser,string pass);
 		Book RentBooks(string idBook);
 };
