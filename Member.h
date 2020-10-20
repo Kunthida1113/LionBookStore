@@ -22,7 +22,7 @@ class Member{
 		Member getMember(string idMember); //เปลี่ยน G เป็น g
 		string getId(); //เพิ่ม
 		string getPass(); //เพิ่ม
-		void readfileMember();
+		void readfileMember(); //เพิ่ม
 		void SetType(string type);
 		bool Pay(string amountofMoney,string idCreditCard,string idBill);
 		void SearchUser(string idUser,string pass);

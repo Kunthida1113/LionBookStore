@@ -10,13 +10,11 @@ using namespace std;
 class LoginController
 {
     private:
-        DbLinkedList *MemberList;
-        string password;
-        string idMember;
+        DbLinkedList *MemberList;//เพิ่ม
     public:
         LoginController();
         void SearchUser(string id, string pass);
-        void readfileMember();
+        void readfileMember();//เพิ่ม
         ~LoginController();
 };
 #endif
