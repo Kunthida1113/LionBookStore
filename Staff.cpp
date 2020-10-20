@@ -6,6 +6,10 @@ Staff::Staff(){
 	IdStaff = " ";
 	password = " ";
 }
+void Staff::SetStaff(string id, string pass){
+	IdStaff = id;
+	password = pass;
+}
 Staff Staff::getStaff(string idUser){
 	
 }

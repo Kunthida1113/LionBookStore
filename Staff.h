@@ -2,6 +2,7 @@
 #define STAFF_H
 #include<iostream>
 #include <string>
+#include <fstream>
 using namespace std;
 
 class Staff{
@@ -19,8 +20,9 @@ class Staff{
 		void showRentBookReport();
 		void showBuyBookReport();
 		void showPreOrderBookReport();
+		void SetStaff(string idStaff, string password);//เพิ่ม
 		void AddBook(string idBook,string NameBook,string Author);
-		//void Login(string idUser,string password); //ไม่น่าจะใช้
+		void Login(string idUser,string password);
 		void SearchUser(string idUser,string password);
 };
 #endif

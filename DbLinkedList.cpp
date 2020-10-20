@@ -62,6 +62,20 @@ void DbLinkedList::AddMember(Member m){
 		count++;
 	}
 }
+void DbLinkedList::AddStaff(Staff s){
+	Node *NewNode = new Node();
+	NewNode->setStaff(s);
+	if(head == NULL){
+		head = NewNode;
+		tail = NewNode;
+		count++;
+	}else{
+		tail->link = NewNode;
+		NewNode->plink = tail;
+		tail = NewNode;
+		count++;
+	}
+}
 bool DbLinkedList::LoginMember(string idUser,string password){
 	Node *tmp;
 	for(tmp=head; tmp != NULL; tmp=tmp->link){
@@ -78,4 +92,5 @@ bool DbLinkedList::LoginStaff(string idUser,string password){
 			return true;
 		}
 	}
+	return false;
 }

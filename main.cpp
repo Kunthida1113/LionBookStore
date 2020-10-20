@@ -11,6 +11,7 @@ int main(){
     string Surname, Lastname, id, pass, status;
     int menu, Cstatus;
     L.readfileMember();
+    L.readfileStaff();
     do{
         cout << "========== LionBookStore ==========" << endl;
         cout << " 1.Regiter" << endl;
