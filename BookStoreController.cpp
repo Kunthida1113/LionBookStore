@@ -105,27 +105,41 @@ void BookStoreController::SelectCategoryBook(){
     cout<<"Select Menu(1-11): ";
     cin>>menuCate;
     cout<<endl;
-    if(menuCate==1){
-        cate = "Cartoon";
-    }else if(menuCate==2){
-        cate = "Children and Youth";
-    }else if(menuCate==3){
-        cate = "Education";
-    }else if(menuCate==4){
-        cate = "Foreign";
-    }else if(menuCate==5){
-        cate = "General Knowledge";
-    }else if(menuCate==6){
-        cate = "Health";
-    }else if(menuCate==7){
-        cate = "Infotainment & Art";
-    }else if(menuCate==8){
-        cate = "Literature";
-    }else if(menuCate==9){
-        cate = "Magazine";
-    }else if(menuCate==10){
-        cate = "Techno";
-    }
+
+    	switch(menuCate){
+    		case 1:
+    			cate = "Cartoon";
+    			break;
+    		case 2:
+    			cate = "Children and Youth";
+    			break;
+    		case 3:
+    			cate = "Education";
+    			break;
+    		case 4:
+    			cate = "Foreign";
+    			break;
+    		case 5:
+    			cate = "General Knowledge";
+    			break;
+    		case 6:
+    			cate = "Health";
+    			break;
+    		case 7:
+    			cate = "Infotainment & Art";
+    			break;
+    		case 8:
+    			cate = "Literature";
+    			break;
+    		case 9:
+    			cate = "Magazine";
+    			break;
+    		case 10:
+    			cate = "Techno";
+    			break;
+    		default:
+    			break;
+	    }
     BookList->ShowCategory(cate);
 }
 /*
