@@ -15,7 +15,7 @@ class LoginController
         string idMember;
     public:
         LoginController();
-        string SearchUser(string id, string pass);
+        void SearchUser(string id, string pass);
         void readfileMember();
         ~LoginController();
 };

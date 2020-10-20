@@ -44,8 +44,7 @@ int main(){
             cin >> id;
             cout << "Enter Password: ";
             cin >> pass;
-            status = L.SearchUser(id,pass);
-            cout << status << endl;
+            L.SearchUser(id,pass);
         }
     }while(menu!=3);
     
