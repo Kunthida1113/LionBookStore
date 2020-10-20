@@ -142,10 +142,24 @@ void BookStoreController::SelectCategoryBook(){
 	    }
     BookList->ShowCategory(cate);
 }
-/*
+
 Book BookStoreController::SearchBook(string NameBook){
+    //BookList *temp;
+    B *temp
+    temp = head;
+    while(temp != NULL){
+        if(NameBook==B.NameBook){
+            cout << "========== List Book ==========="<<endl;
+            //cout << B.nameBook<<endl;
+        }
+    }
+    
+    
+    
+    
 
 }
+/*
 Book BookStoreController::RentBook(string IdBook){
 
 }
