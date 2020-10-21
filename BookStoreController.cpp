@@ -142,10 +142,18 @@ void BookStoreController::SelectCategoryBook(){
 	    }
     BookList->ShowCategory(cate);
 }
-/*
-Book BookStoreController::SearchBook(string NameBook){
 
+Book BookStoreController::SearchBook(string NameBook){
+    Book B;
+    B = BookList->getBook(NameBook);
+    return B;
+    
+   /* cout <<"===================================================================================================================================================================================================================="<<endl;
+    cout <<setw(15)<<left<<"No."<<setw(20)<<left<<"ID Books"<<setw(30)<<left<<"Books Name"<<setw(15)<<left<<"Author"<<setw(15)<<left<<"Rental price"<<setw(15)<<left<<"Selling price"<<endl;
+    cout <<"===================================================================================================================================================================================================================="<<endl;
+    */
 }
+/*
 Book BookStoreController::RentBook(string IdBook){
 
 }

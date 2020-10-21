@@ -62,6 +62,20 @@ void DbLinkedList::AddMember(Member m){
 		count++;
 	}
 }
+void DbLinkedList::AddStaff(Staff s){
+	Node *NewNode = new Node();
+	NewNode->setStaff(s);
+	if(head == NULL){
+		head = NewNode;
+		tail = NewNode;
+		count++;
+	}else{
+		tail->link = NewNode;
+		NewNode->plink = tail;
+		tail = NewNode;
+		count++;
+	}
+}
 void DbLinkedList::ShowCategory(string cate){
 	for(Node *temp=head;temp!=NULL;temp=temp->link){
 		if(temp->B.getCate()==cate){
@@ -69,4 +83,33 @@ void DbLinkedList::ShowCategory(string cate){
 			<<temp->B.getAuthor()<<left<<setw(10)<<endl;
 		}
 	}
+}
+Book DbLinkedList::getBook(string NameBook){
+	Node *temp = new Node;
+	while (temp != NULL){
+		if(NameBook==temp->B.getNameBook())
+		{
+			return temp->B;
+		}
+		
+	}
+}//ของเนมนะจ๊ะ
+
+bool DbLinkedList::LoginMember(string idUser,string password){
+	Node *tmp;
+	for(tmp=head; tmp != NULL; tmp=tmp->link){
+		if(tmp->M.getId() == idUser && tmp->M.getPass() == password){
+			return true;
+		}
+	}
+	return false;
+}
+bool DbLinkedList::LoginStaff(string idUser,string password){
+	Node *tmp;
+	for(tmp=head; tmp != NULL; tmp=tmp->link){
+		if(tmp->S.getId() == idUser && tmp->S.getPass() == password){
+			return true;
+		}
+	}
+	return false;
 }
