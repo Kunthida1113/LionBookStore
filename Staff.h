@@ -1,3 +1,5 @@
+#ifndef STAFF_H
+#define STAFF_H
 #include<iostream>
 #include <string>
 using namespace std;
@@ -18,3 +20,4 @@ class Staff{
 		void Login(string idUser,string password);
 		void SearchUser(string idUser,string password);
 };
+#endif

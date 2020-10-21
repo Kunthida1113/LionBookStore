@@ -8,12 +8,22 @@ class Book{
 		string IdBook;
 		string NameBook;
 		string Author;
+		string Year;
+		string Category;
 		double RentPrice;
-		double SellPrice;
+		double BuyPrice;
 		double PrePrice;
 	public:
         Book();
-        void SetBook(string idBook,string nameBook,string author,double rentPrice,double sellPrice,double prePrice);
+        void SetBook(string IdBook,string NameBook,string Author,string year,string cate,double RentPrice,double buyPrice,double PrePrice);
+		string getIdBook();
+		string getNameBook();
+		string getAuthor();
+		string getYear();
+		string getCate();
+		double getRentPrice();
+		double getBuyPrice();
+		double getPrePrice();
 		Book SelectCategoryBook();
 		Book SearchBook(string nameBook);
 		Book RentBook(string idBook);

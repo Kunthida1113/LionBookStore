@@ -40,6 +40,7 @@ void DbLinkedList::AddBook(Book b){
 	if(head == NULL){
 		head = NewNode;
 		tail = NewNode;
+		count++;
 	}else{
 		tail->link = NewNode;
 		NewNode->plink = tail;
@@ -53,6 +54,7 @@ void DbLinkedList::AddMember(Member m){
 	if(head == NULL){
 		head = NewNode;
 		tail = NewNode;
+		count++;
 	}else{
 		tail->link = NewNode;
 		NewNode->plink = tail;
@@ -60,4 +62,15 @@ void DbLinkedList::AddMember(Member m){
 		count++;
 	}
 }
+<<<<<<< HEAD
 
+=======
+void DbLinkedList::ShowCategory(string cate){
+	for(Node *temp=head;temp!=NULL;temp=temp->link){
+		if(temp->B.getCate()==cate){
+			cout<<temp->B.getIdBook()<<left<<setw(10)<<temp->B.getNameBook()<<left<<setw(20)
+			<<temp->B.getAuthor()<<left<<setw(10)<<endl;
+		}
+	}
+}
+>>>>>>> e2e9d5f76e29b6c875471f45104b7e6440b11735

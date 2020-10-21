@@ -1,40 +1,64 @@
-#include<iostream>
-#include<string>
-#include"Staff.h"
-#include"DbLinkedList.h"
-#include <fstream>
-using namespace std;
-class RegisterController{
-	private:
-		class Node{
-            public:
-            		string Name;
-		      string Lastname;
-		string password;
-		string Type;
-                Book B;
-                Member M;
-                Staff S;
-                Node *link;
-                Node *plink;
-                Node();
-                Node(Book b,Member m, Staff s);
-                void setBook(Book b);
-                void setMember(Member m);
-                void setStaff(Staff s);
-        };
-        Node *head;
-        Node *tail;
-        int count;
-	public:
-		void datamember(){
-			Node *temp = head;
-			fstream infile;
-			infile.open("memberdata.txt",ios::trunc|ios::out);
-			while(temp !=NULL){
-				infile << temp->Name << "," << temp->Lastname <<","<< temp->password << "," <<temp->Type <<endl;
-				temp = temp->link; 
-			}
-			infile.close();
-		}
-	};
+#include "RegiterController.h"
+
+void RegiterController::Register(string surname, string lastname, string password, string status){
+    int num;
+    string snum, idMember;   
+    num = NumberMember();
+    num += 1;
+    stringstream ss;
+    ss << num;
+    snum = ss.str();
+    if(status=="General"){
+        idMember = "11" + snum;
+        status = "General";
+    }else if("VIP"){
+        idMember = "12" + snum;
+        status = "VIP";
+    }
+    string filein;
+	ofstream infile;
+	infile.open("Member.dat", ios::app);
+	if(infile.fail()){
+		cout << "Not have file." << endl;
+	}else{
+		infile << surname << ","
+        << lastname << ","
+        << idMember << ","
+        << password << ","
+        << status << endl;
+	}	
+	infile.close();
+    //Member *M = new Member(surname, lastname, idMember, password, status);
+}
+int RegiterController::NumberMember(){
+    //????????? Member ?????
+    string surname, lastname, password, idMember, status;
+    string filein;
+    int num = 1000;
+	ifstream infile;
+	infile.open("Member.dat", ios::in);
+	if(infile.fail()){
+		cout << "Not have file." << endl;
+	}else{
+		while(getline(infile, filein)){
+			surname = filein.substr(0, filein.find(","));
+			    filein.erase(0, filein.find(",")+1);
+            lastname = filein.substr(0, filein.find(","));
+			    filein.erase(0, filein.find(",")+1);
+            password = filein.substr(0, filein.find(","));
+			    filein.erase(0, filein.find(",")+1);
+            idMember = filein.substr(0, filein.find(","));
+			    filein.erase(0, filein.find(",")+1);
+            num++;
+    	}
+	}
+	infile.close();
+    return num;
+}
+void RegiterController::SelectTypeMember(string Type){
+
+}
+bool RegiterController::Pay(string amount, string idCredit, string idBill){
+
+}
+
