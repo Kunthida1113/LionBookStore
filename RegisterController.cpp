@@ -8,7 +8,8 @@ void RegiterController::Register(string surname, string lastname, string passwor
     stringstream ss;
     ss << num;
     snum = ss.str();
-    if(status=="General"){
+    
+	if(status=="General"){
         idMember = "11" + snum;
         status = "General";
     }else if("VIP"){
