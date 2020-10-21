@@ -76,6 +76,24 @@ void DbLinkedList::AddStaff(Staff s){
 		count++;
 	}
 }
+Member DbLinkedList::getMember(string id){
+	Member m;
+	for(Node *temp=head;temp!=NULL;temp=temp->link){
+		if(temp->M.getId()==id){
+			m = temp->M;
+			return m;
+		}
+	}
+}
+Staff DbLinkedList::getStaff(string id){
+	Staff s;
+	for(Node *temp=head;temp!=NULL;temp=temp->link){
+		if(temp->S.getId()==id){
+			s = temp->S;
+			return s;
+		}
+	}
+}
 bool DbLinkedList::LoginMember(string idUser,string password){
 	Node *tmp;
 	for(tmp=head; tmp != NULL; tmp=tmp->link){

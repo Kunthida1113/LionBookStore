@@ -7,7 +7,7 @@
   CFLAGS  = -g -Wall
 
   # the build target executable:
-  TARGET = BookStoreOnline
+  TARGET = main
   FILEMAIN = main.cpp
   CLASS = Member.cpp Book.cpp Staff.cpp DbLinkedList.cpp LoginController.cpp RegiterController.cpp
   all: 

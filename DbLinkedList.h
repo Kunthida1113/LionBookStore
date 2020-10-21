@@ -30,6 +30,8 @@ class DbLinkedList
         void AddBook(Book b);
         void AddMember(Member m);
         void AddStaff(Staff s);
+        Member getMember(string id);//เพิ่ม
+        Staff getStaff(string id);//เพิ่ม
         bool LoginMember(string idUser,string password); //เพิ่ม
         bool LoginStaff(string idUser,string password); //เพิ่ม
 };
