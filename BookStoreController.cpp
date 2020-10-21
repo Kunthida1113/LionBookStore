@@ -144,22 +144,14 @@ void BookStoreController::SelectCategoryBook(){
 }
 
 Book BookStoreController::SearchBook(string NameBook){
-       Book B;
-    B=BookList->getBook();
+    Book B;
+    B=BookList->getBook(NameBook);
 
-    /*B *temp;
-    //string temp;
-    temp = head;
-    cout << "========== List Book ==========="<<endl;
-    while(temp != NULL){
-        if(NameBook==temp->NameBook){
-            //cout << B->nameBook<<endl;
-        }
-    }*/
-    
-    
-    
-    
+    cout <<"===================================================================================================================================================================================================================="<<endl;
+    cout <<setw(15)<<left<<"No."<<setw(20)<<left<<"ID Books"<<setw(30)<<left<<"Books Name"<<setw(15)<<left<<"Author"<<setw(15)<<left<<"Rental price"<<setw(15)<<left<<"Selling price"<<endl;
+
+
+    cout <<"===================================================================================================================================================================================================================="<<endl;
 
 }
 /*

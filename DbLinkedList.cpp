@@ -70,3 +70,14 @@ void DbLinkedList::ShowCategory(string cate){
 		}
 	}
 }
+Book DbLinkedList::getBook(string NameBook){
+	Node *NewNode = new Node;
+	while (NewNode != NULL){
+		if(NameBook==B->NameBook)
+		{
+			return NewNode->B;
+		}
+		count++;
+	}
+};
+

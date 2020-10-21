@@ -4,6 +4,7 @@
 #include<string>
 #include<fstream>
 #include<sstream>
+#include<stdlib.h>
 #include"Book.h"
 #include"Member.h"
 #include"DbLinkedList.h"

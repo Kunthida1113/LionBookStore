@@ -32,6 +32,6 @@ class DbLinkedList
         void AddBook(Book b);
         void AddMember(Member m);
         void ShowCategory(string cate);
-        Book getBook();
+        Book getBook(string NameBook);
 };
 #endif
