@@ -70,3 +70,12 @@ void DbLinkedList::ShowCategory(string cate){
 		}
 	}
 }
+Book DbLinkedList::getBook(string idBook){
+	Book b;
+	for(Node *temp=head;temp!=NULL;temp=temp->link){
+		if(temp->B.getIdBook() == idBook){
+			b = temp->B;
+		}
+	}
+	return b;
+}

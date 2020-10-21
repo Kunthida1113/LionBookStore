@@ -11,13 +11,14 @@
 class BookStoreController{
 	private:
 		DbLinkedList *BookList;
+		DbLinkedList *RentBookList;
 	public:
 		BookStoreController();
 		~BookStoreController();
 		void LoadInfoBook();
 		void SelectCategoryBook();
+		void RentBook(string IdBook);
 /*		Book SearchBook(string NameBook);
-		Book RentBook(string IdBook);
 		double Calculate(Member m,Book b);
 		bool Pay(string AmountofMoney,string IDCreditCard,string IDBill);*/
 };
