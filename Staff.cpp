@@ -1,5 +1,5 @@
 #include"Staff.h"
-/*Staff getStaff(string idUser){
+Staff getStaff(string idUser){
 	
 }
 void showRentBookReport(){
@@ -19,4 +19,4 @@ void Login(string idUser,string password){
 }
 void SearchUser(string idUser,string password){
 	
-}*/
+}

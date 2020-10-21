@@ -1,6 +1,6 @@
 00001962,A Wrinkle in Time,Madeleine L'Engle,1962,315.50,1263.00
 00011964,Charlie and the Chocolate Factory,Roald Dahl,1964,296.75,1105.50
-00021993,The Batman Adventures: Mad Love,1993,268.50,1074.00
+00021993,The Batman Adventures: Mad Love,Paul Dini,1993,268.50,1074.00
 00032001,The Art of Spirited Away,Hayao Miyazaki,2001,277.75,1121.50
 00042002,Tim Burton's Nightmare Before Christmas,Frank T.Thompson,2002,319.00,1160.75
 00052004,The Art of Howl's Moving Castle,Hayao Miyazaki,2004,249.25,947.75
@@ -18,16 +18,16 @@
 00172016,Blank Comic Book For Kids,Blank Books 'N' Journals,2016,49.50,202.25
 00182015,The Cartoon Introduction to Philosophy,Michael F. Patton,2015,144.25,560.75
 00192020,Chonky Cats,Chonky Cats,2020,32.25,359.75
-01001784,Clarissa by Samuel Richardson,1748,81.25,485.50
-01011816,Emma by Jane Austen,1816,61.00,314.50
-01021847,Jane Eyre by Charlotte Brontë,1847,62.75,315.500
-01031889,Three Men in a Boat by Jerome K Jerome,1889,94.75,573.25
-01041895,The Red Badge of Courage by Stephen Crane,1895,57.25,357.75
-01051900,Sister Carrie by Theodore Dreiser,1900,61.50,424.00
-01061915,The Good Soldier by Ford Madox Ford,1915,59.00,394.50
-01071925,Mrs Dalloway by Virginia Woolf,1925,67.50,445.00
-01081948,The Heat of the Day by Elizabeth Bowen,1948,98.25,598.75
-01091988,The Beginning of Spring by Penelope Fitzgerald,1988,84.50,549.75
+01001784,Clarissa,Samuel Richardson,1748,81.25,485.50
+01011816,Emma,Jane Austen,1816,61.00,314.50
+01021847,Jane Eyre,Charlotte Brontë,1847,62.75,315.500
+01031889,Three Men in a Boat,Jerome K Jerome,1889,94.75,573.25
+01041895,The Red Badge of Courage,Stephen Crane,1895,57.25,357.75
+01051900,Sister Carrie,Theodore Dreiser,1900,61.50,424.00
+01061915,The Good Soldier,Ford Madox Ford,1915,59.00,394.50
+01071925,Mrs Dalloway,Virginia Woolf,1925,67.50,445.00
+01081948,The Heat of the Day,Elizabeth Bowen,1948,98.25,598.75
+01091988,The Beginning of Spring,Penelope Fitzgerald,1988,84.50,549.75
 01102017,Spooky Pookie (Little Pookie),Sandra Boynton,2017,47.50,288.25
 01112003,Room on the Broom,Julia Donaldson,2003,36.25,159.75 
 01122009,Dr. Seuss's Beginner Book Collection,Dr.Seuss,2009,289.00,1250.50
@@ -57,7 +57,7 @@
 02162020,The Manifesto for Teaching Online,Peter Evans,2020,99.75,778.75
 02172019,Teaching When the World Is on Fire,Lisa Delpit,2020,102.00,809.75
 02182019,Lisa Delpit,John R. Thelin,2019,759.00,1230.75
-02192003,The Case for Classical Christian Education,2003,94.25,747.50
+02192003,The Case for Classical Christian Education,Wilson Douglas,2003,94.25,747.50
 03001547,The Prince and The Puaper,Mark Twain,1547,212.75,931.00
 03011991,Little Dorrit,Charles Dickens,1991,84.50,549.75
 03021991,Amelia Earhart,Janet Hardy,1991,98.25,598.75
@@ -103,7 +103,7 @@
 05022008,Nudge: Improving Decisions About Health, Wealth, and Happiness, Richard H. Thaler,2008,32.50,242.50
 05032011,Wheat Belly,William Davis,2011,57.25,431.00
 05042013,Weight Loss Secrets,Lise Gottlieb,2013,44.50,312.00
-05052016,When Breath Becomes Air,2016,35.25,206.50
+05052016,When Breath Becomes Air,Paul Kalanithi,2016,35.25,206.50
 05062017,Why We Sleep: Unlocking the Power of Sleep and Dreams,Matthew Walker,2017,57.25,410.75
 05072020,Think Like a Monk,Jay Shetty,2020,68.75,524.00
 05082020,You Should See Me in a Crown,Leah Johnson,2020,43.25,399.75
@@ -124,7 +124,7 @@
 06032007,News as Entertainment,Daya Kishan Thussu,2007,96.25,977.75
 06042008,Meditations on Violence: A Comparison of Martial Arts Training & Real World Violence,Rory Miller,2008,75.50,504.75
 06052013,Mortal Arts,Anna Lee Huber,2013,52.00,443.50
-06062014,Arts & Entertainments,2014,31.59,298.44
+06062014,Arts & Entertainments,Christopher Beha,2014,31.59,298.44
 06072015,he Shattered Court,M.J. Scott,2015,47.00,377.25
 06082019,The Rival,Richard Murphy,2019,42.50,389.75
 06092020,These Women,Ivy Pochoda,2020,89.50,795.25

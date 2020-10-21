@@ -25,9 +25,9 @@ DbLinkedList::DbLinkedList(){
     count=0;
 }
 DbLinkedList::~DbLinkedList(){
-	for(int i=0;i<count;i++){
-		Node *tmp = head;
-		tmp =head->link;
+	for(int i=1;i<count;i++){
+		Node *tmp = this->head;
+		tmp =this->head->link;
 		delete tmp;
 		tmp = NULL;
 	}
@@ -42,8 +42,8 @@ void DbLinkedList::AddBook(Book b){
 		tail = NewNode;
 		count++;
 	}else{
-		NewNode->plink = tail;
 		tail->link = NewNode;
+		NewNode->plink = tail;
 		tail = NewNode;
 		count++;
 	}
@@ -56,25 +56,26 @@ void DbLinkedList::AddMember(Member m){
 		tail = NewNode;
 		count++;
 	}else{
-		NewNode->plink = tail;
 		tail->link = NewNode;
+		NewNode->plink = tail;
 		tail = NewNode;
 		count++;
 	}
 }
-int DbLinkedList::size(){
-	return count;
-}
 void DbLinkedList::ShowCategory(string cate){
-	for(Node *tmp=head;tmp!=NULL;tmp=tmp->link){
-		if(tmp->B.getCate()==cate){
-			cout<<tmp->B.getId()<<"\t"<<tmp->B.getName()<<endl;
+	for(Node *temp=head;temp!=NULL;temp=temp->link){
+		if(temp->B.getCate()==cate){
+			cout<<temp->B.getIdBook()<<left<<setw(10)<<temp->B.getNameBook()<<left<<setw(20)
+			<<temp->B.getAuthor()<<left<<setw(10)<<endl;
 		}
 	}
 }
-void DbLinkedList::ShowAllBook(){
-	for(Node *tmp=head;tmp!=NULL;tmp=tmp->link){
-			cout<<tmp->B.getId()<<endl;
+Book DbLinkedList::getBook(string idBook){
+	Book b;
+	for(Node *temp=head;temp!=NULL;temp=temp->link){
+		if(temp->B.getIdBook() == idBook){
+			b = temp->B;
+		}
 	}
+	return b;
 }
-
