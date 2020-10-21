@@ -1,22 +1,36 @@
 #include"Staff.h"
-Staff getStaff(string idUser){
+Staff::Staff(){
+    Name = " ";
+	Surname = " ";
+	Division = " ";
+	IdStaff = " ";
+	password = " ";
+}
+void Staff::SetStaff(string id, string pass){
+	IdStaff = id;
+	password = pass;
+}
+Staff Staff::getStaff(string idUser){
 	
 }
-void showRentBookReport(){
+string Staff::getId(){
+    return IdStaff;
+}
+string Staff::getPass(){
+    return password;
+}
+void Staff::showRentBookReport(){
 	
 }
-void showBuyBookReport(){
+void Staff::showBuyBookReport(){
 	
 }
-void showPreOrderBookReport(){
+void Staff::showPreOrderBookReport(){
 	
 }
-void AddBook(string idBook,string NameBook,string Author){
+void Staff::AddBook(string idBook,string NameBook,string Author){
 	
 }
-void Login(string idUser,string password){
-	
-}
-void SearchUser(string idUser,string password){
+void Staff::SearchUser(string idUser,string password){
 	
 }

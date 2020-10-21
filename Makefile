@@ -7,13 +7,9 @@
   CFLAGS  = -g -Wall
 
   # the build target executable:
-  TARGET = BookStoreOnline
+  TARGET = main
   FILEMAIN = main.cpp
-<<<<<<< HEAD
-  CLASS = Member.cpp Book.cpp Staff.cpp DbLinkedList.cpp BookStoreController.cpp
-=======
-  CLASS = Member.cpp Book.cpp Staff.cpp DbLinkedList.cpp RentBookController.cpp
->>>>>>> fe073c614dd9718d00e14d3f7c5ff4a5d18de58a
+  CLASS = Member.cpp Book.cpp Staff.cpp DbLinkedList.cpp LoginController.cpp RegiterController.cpp BookStoreController.cpp
   all: 
 	$(CC) $(FILEMAIN) $(CLASS) $(CFLAGS) -o $(TARGET)
 

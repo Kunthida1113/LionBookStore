@@ -1,24 +1,38 @@
 #include "Member.h"
 Member::Member(){
-    Surname = "";    
-    Lastname = "";
-    IdMember = "";
-    password = "";
-    Type = "";
-    Status = "";
-    IdCredit = "";
+    Surname = " ";    
+    Lastname = " ";
+    IdMember = " ";
+    password = " ";
+    Type = " ";
+    Status = " ";
+    IdCredit = " ";
 }
-Member::Member(string Name,string Surname,string IdMember,string password,string Type,string Status,string IDCreditCard){
-  
+Member::Member(string name,string lastname,string idMember,string pass, string status){
+       Surname = name ;
+       Lastname = lastname;
+       IdMember = idMember;
+       password = pass;
+       Status = status;
 }
 Book Member::SearchNameBook(string NameBook){
 
 }
-void Member::SetMember(string Name,string Surname,string password){
-
+void Member::SetMember(string name,string lastname,string idMember,string pass, string status){
+    Surname = name ;
+    Lastname = lastname;
+    IdMember = idMember;
+    password = pass;
+    Status = status;
 }
-Member Member::GetMember(string IdMember){
-
+Member Member::getMember(string IdMember){
+    
+}
+string Member::getId(){
+    return IdMember;
+}
+string Member::getPass(){
+    return password;
 }
 void Member::SetType(string Type){
 
