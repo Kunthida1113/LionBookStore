@@ -10,7 +10,7 @@ int main(){
     RegiterController R;
     LoginController L;
     BookStoreController B;
-    DbLinkedList *Db;
+    DbLinkedList Db;
     
     string Surname, Lastname, id, pass, status,namebook;
     int menu,mainMenu,searchMenu, Cstatus;
@@ -76,7 +76,7 @@ int main(){
                                 if(searchMenu==1){
                                     cout<<"Please enter the title of the book: ";
                                     cin >> namebook;
-                                    Db=B.SearchBook(namebook);
+                                   // Db=B.SearchBook(namebook);
                                     cout <<"===================================================================================================================================================================================================================="<<endl;
                                     cout <<setw(15)<<left<<"No."<<setw(20)<<left<<"ID Books"<<setw(30)<<left<<"Books Name"<<setw(15)<<left<<"Author"<<setw(15)<<left<<"Rental price"<<setw(15)<<left<<"Selling price"<<endl;
                                     cout <<"====================================================================================================================================================================================================================="<<endl;

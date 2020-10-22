@@ -21,6 +21,7 @@ class DbLinkedList
                 Node(Book b,Member m, Staff s);
                 void setBook(Book b);
                 void setMember(Member m);
+                void setInfo(Member m,Book b);
                 void setStaff(Staff s);
         };
         Node *head;
@@ -32,15 +33,17 @@ class DbLinkedList
         int size();
         void AddBook(Book b);
         void AddMember(Member m);
+        void AddInfo(Member m,Book b);
         void ShowCategory(string cate);
-        Book getBook(string NameBook);
+        void ShowBookList();
         void AddStaff(Staff s);
         bool LoginMember(string idUser,string password); //เพิ่ม
         bool LoginStaff(string idUser,string password); //เพิ่ม
-        void AddStaff(Staff s);
         Member getMember(string id);//เพิ่ม
         Staff getStaff(string id);//เพิ่ม
-        bool LoginMember(string idUser,string password); //เพิ่ม
-        bool LoginStaff(string idUser,string password); //เพิ่ม
+        Book getBook(string idBook);
+        Book getBookName(string NameBook);
+        Book getBook(int index);
+        Member getMember(int index);
 };
 #endif
