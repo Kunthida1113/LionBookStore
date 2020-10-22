@@ -7,6 +7,18 @@ BookStoreController::~BookStoreController(){
     BookList = NULL;
     RentBookList = NULL;
 }
+void BookStoreController::ReadFile(string nameFile){
+    string line;
+    ifstream ReadFile(nameFile,ios::in);
+    if(ReadFile.is_open()){
+        while(getline(ReadFile,line)){
+            cout<<"\t\t\t"<<line<<endl;
+        }
+        ReadFile.close();
+    }else{
+        cout<<"Can not open file"<<endl;
+    }
+}
 void BookStoreController::LoadInfoBook(){
     Book B;
     string line,idBook,nameBook,author,year,cate,rentPrice,buyPrice,prePrice;
@@ -87,6 +99,7 @@ void BookStoreController::LoadInfoBook(){
     }//else open
 }
 void BookStoreController::SelectCategoryBook(){
+    Book b;
     int menuCate=0;
     string cate="";
     cout<<"======================================"<<endl;
@@ -130,18 +143,58 @@ void BookStoreController::SelectCategoryBook(){
     }
     BookList->ShowCategory(cate);
 }
+
+Book BookStoreController::RentBook(Member m,string IdBook){
+    Book b;
+    b = BookList->getBook(IdBook);
+    if(b.getIdBook()!=IdBook){
+        cout<<"Don't have this book in store."<<endl;
+    }else{
+        RentBookList->AddInfo(m,b);
+        ShowRentBookList();
+        SaveReport();
+    }
+    return b;
+}
+void BookStoreController::ShowRentBookList(){
+    int size=0;
+    Book b;
+    size = RentBookList->size();
+    cout<<"================================================================================================================="<<endl;
+    cout<<"\t\t\t\t\t\tRent List"<<endl;
+    cout<<"================================================================================================================="<<endl;
+    cout<<left<<setw(10)<<"No."<<left<<setw(20)<<"ID Books"<<left<<setw(30)<<"Books Name"<<left<<setw(20)<<"Author"<<left<<setw(10)<<"Price"<<left<<setw(15)<<"Quantity"<<left<<setw(10)<<"Sum"<<endl;
+    cout<<"================================================================================================================="<<endl;
+    for(int i=1;i<=size;i++){
+        b = RentBookList->getBook(i);
+        cout<<left<<setw(10)<<i<<left<<setw(20)<<b.getIdBook()<<left<<setw(30)<<b.getNameBook()
+        <<left<<setw(20)<<b.getAuthor()<<left<<setw(10)<<b.getRentPrice()<<left<<setw(15)<<"  1"
+        <<left<<setw(10)<<b.getRentPrice()<<endl;
+    }
+    cout<<"================================================================================================================="<<endl;
+}
+void BookStoreController::SaveReport(){
+    Member m;
+    Book b;
+    int size=0;
+    size = RentBookList->size();
+ //   ofstream writeFile;
+ //   writeFile.open(" ",ios::app);
+   // if(writeFile.is_open()){
+        for(int i=1;i<=size;i++){
+            m = RentBookList->getMember(i);
+            b = RentBookList->getBook(i);
+            cout<<"Member: "<<m.getNameMember()<<" Book:"<<b.getNameBook()<<endl;
+        //    writeFile
+        }
+   // }
+    //append to file --> m.getIdmember() ,...
+}
 /*
 Book BookStoreController::SearchBook(string NameBook){
 
 }
-*/
-void BookStoreController::RentBook(string IdBook){
-    Book b;
-    b = BookList->getBook(IdBook);
-    RentBookList->AddBook(b);
-    
-}
-/*
+
 double BookStoreController::Calculate(Member m,Book b){
 
 }

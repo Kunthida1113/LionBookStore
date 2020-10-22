@@ -2,7 +2,8 @@
 #define MEMBER_H
 #include<iostream>
 #include<string>
-#include "Book.h"
+#include"Book.h"
+//#include"DbLinkedList.h"
 using namespace std;
 class Member{
 	private:
@@ -22,6 +23,6 @@ class Member{
 		void SetType(string type);
 		bool Pay(string amountofMoney,string idCreditCard,string idBill);
 		void SearchUser(string idUser,string pass);
-		Book RentBooks(string idBook);
+		string getNameMember();
 };
 #endif

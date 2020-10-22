@@ -15,9 +15,12 @@ class BookStoreController{
 	public:
 		BookStoreController();
 		~BookStoreController();
+		void ReadFile(string nameFile);
 		void LoadInfoBook();
 		void SelectCategoryBook();
-		void RentBook(string IdBook);
+		Book RentBook(Member m,string IdBook);
+		void ShowRentBookList();
+		void SaveReport();
 /*		Book SearchBook(string NameBook);
 		double Calculate(Member m,Book b);
 		bool Pay(string AmountofMoney,string IDCreditCard,string IDBill);*/
