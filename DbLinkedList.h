@@ -21,6 +21,7 @@ class DbLinkedList
                 Node(Book b,Member m, Staff s);
                 void setBook(Book b);
                 void setMember(Member m);
+                void setInfo(Member m,Book b);
                 void setStaff(Staff s);
         };
         Node *head;
@@ -29,9 +30,13 @@ class DbLinkedList
     public:
         DbLinkedList();
         ~DbLinkedList();
+        int size();
         void AddBook(Book b);
         void AddMember(Member m);
+        void AddInfo(Member m,Book b);
         void ShowCategory(string cate);
         Book getBook(string idBook);
+        Book getBook(int index);
+        Member getMember(int index);
 };
 #endif
