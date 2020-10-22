@@ -7,7 +7,7 @@
 #include"Book.h"
 #include"Member.h"
 #include"DbLinkedList.h"
-
+using namespace std;
 class BookStoreController{
 	private:
 		DbLinkedList *BookList;
