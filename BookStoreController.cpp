@@ -144,7 +144,7 @@ void BookStoreController::SelectCategoryBook(){
     BookList->ShowCategory(cate);
 }
 
-Book BookStoreController::RentBook(Member m,string IdBook){
+void BookStoreController::RentBook(Member m,string IdBook){
     Book b;
     b = BookList->getBook(IdBook);
     if(b.getIdBook()!=IdBook){
@@ -152,9 +152,8 @@ Book BookStoreController::RentBook(Member m,string IdBook){
     }else{
         RentBookList->AddInfo(m,b);
         ShowRentBookList();
-        SaveReport();
     }
-    return b;
+    //return b;
 }
 void BookStoreController::ShowRentBookList(){
     int size=0;
@@ -173,22 +172,53 @@ void BookStoreController::ShowRentBookList(){
     }
     cout<<"================================================================================================================="<<endl;
 }
-void BookStoreController::SaveReport(){
+void BookStoreController::SaveRentBookReport(){
     Member m;
     Book b;
+    string tempMonth,tempDay,tempYear,DateIn,timeIn,f;
+	int length=0,check=0;
+	unsigned int find =0;    	
+    time_t now = time(0);
+	string dt = ctime(&now);
+	dt.erase(0,dt.find(' ')+1);
+	length = dt.length();
+	for(int i=0;i<length;i++){
+		find = dt.find(' ');
+		if(find!=0){
+			check++;
+			if(check==1){
+				tempMonth = dt.substr(0,find);
+				dt.erase(0,find+1);
+			}else if(check==2){
+					tempDay = dt.substr(0,find);
+					dt.erase(0,find+1);
+			}else if(check==3){
+					timeIn = dt.substr(0,find);
+					dt.erase(0,find-1);
+			}else if(check==4){
+					tempYear = dt.substr(2,4);
+					dt.erase(0,length);
+			}
+		}
+	}
+
+	DateIn = tempDay+"/"+tempMonth+"/"+tempYear;
+
     int size=0;
     size = RentBookList->size();
- //   ofstream writeFile;
- //   writeFile.open(" ",ios::app);
-   // if(writeFile.is_open()){
+    ofstream writeFile;
+    writeFile.open("RentBookReport.txt",ios::app);
+    if(writeFile.is_open()){
         for(int i=1;i<=size;i++){
             m = RentBookList->getMember(i);
             b = RentBookList->getBook(i);
-            cout<<"Member: "<<m.getNameMember()<<" Book:"<<b.getNameBook()<<endl;
-        //    writeFile
+            writeFile<<","<<m.getId()<<","<<m.getName()<<","<<b.getNameBook()<<","
+            <<b.getRentPrice()<<","<<DateIn<<"\n";
         }
-   // }
-    //append to file --> m.getIdmember() ,...
+        writeFile.close();
+    }else{
+        cout<<"Can not open file"<<endl;
+    }
 }
 /*
 Book BookStoreController::SearchBook(string NameBook){
