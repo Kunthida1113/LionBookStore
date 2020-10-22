@@ -144,6 +144,20 @@ void BookStoreController::SelectCategoryBook(){
     BookList->ShowCategory(cate);
 }
 
+void BookStoreController::SearchBook(string NameBook){
+    DbLinkedList s;
+    Book B;
+    int size=0;
+    size = BookList->size();
+    for(int i=1;i<=size;i++){
+        B = BookList->getBook(i);
+        if(B.getNameBook()==NameBook){
+            s.AddBook(B);
+        }
+    }
+    s.ShowBookList();
+}
+
 void BookStoreController::RentBook(Member m,string IdBook){
     Book b;
     b = BookList->getBook(IdBook);
@@ -179,12 +193,12 @@ void BookStoreController::BuyBook(Member m,string IdBook){
     if(B.getIdBook()!=IdBook){
         cout<<"Don't have this book in store."<<endl;
     }else{
-        BuyBookList->AddInfo(m,b);
-        ShowBuytBookList();
-    };
+        BuyBookList->AddInfo(m,B);
+        ShowBuyBookList();
+    }
 }
 
-void BookStoreController::ShowBuyBookList();{
+void BookStoreController::ShowBuyBookList(){
 	int size=0;
     	Book b;
     	size = BuyBookList->size();
@@ -206,7 +220,7 @@ void BookStoreController::ShowBuyBookList();{
 		cout<<left<<setw(30)<<b.getNameBook();
         	cout<<left<<setw(20)<<b.getAuthor();
 		cout<<left<<setw(10)<<b.getRentPrice();
-		cout<<left<<setw(15)<<"  1"
+		cout<<left<<setw(15)<<"  1";
         	cout<<left<<setw(10)<<b.getRentPrice()<<endl;
     	}
     	cout<<"================================================================================================================="<<endl;
@@ -218,12 +232,12 @@ void BookStoreController::PreBook(Member m,string IdBook){
     if(B.getIdBook()!=IdBook){
         cout<<"Don't have this book in store."<<endl;
     }else{
-        PreBookList->AddInfo(m,b);
+        PreBookList->AddInfo(m,B);
         ShowPreBookList();
     };
 }
 
-void BookStoreController::ShowPreBookList();{
+void BookStoreController::ShowPreBookList(){
 	int size=0;
     	Book b;
     	size = PreBookList->size();
@@ -245,7 +259,7 @@ void BookStoreController::ShowPreBookList();{
 		cout<<left<<setw(30)<<b.getNameBook();
         	cout<<left<<setw(20)<<b.getAuthor();
 		cout<<left<<setw(10)<<b.getRentPrice();
-		cout<<left<<setw(15)<<"  1"
+		cout<<left<<setw(15)<<"  1";
         	cout<<left<<setw(10)<<b.getRentPrice()<<endl;
     	}
     	cout<<"================================================================================================================="<<endl;

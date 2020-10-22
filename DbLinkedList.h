@@ -35,7 +35,14 @@ class DbLinkedList
         void AddMember(Member m);
         void AddInfo(Member m,Book b);
         void ShowCategory(string cate);
+        void ShowBookList();
+        void AddStaff(Staff s);
+        bool LoginMember(string idUser,string password); //เพิ่ม
+        bool LoginStaff(string idUser,string password); //เพิ่ม
+        Member getMember(string id);//เพิ่ม
+        Staff getStaff(string id);//เพิ่ม
         Book getBook(string idBook);
+        Book getBookName(string NameBook);
         Book getBook(int index);
         Member getMember(int index);
 };

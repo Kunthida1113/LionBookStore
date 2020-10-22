@@ -4,7 +4,7 @@
 #include<string>
 #include<fstream>
 #include<sstream>
-#include<ctime>
+#include<stdlib.h>
 #include"Book.h"
 #include"Member.h"
 #include"DbLinkedList.h"
@@ -29,8 +29,8 @@ class BookStoreController{
 		void ShowPreBookList();
 		void SaveRentBookReport();
 		void SaveBuyBookReport();
-		void SavePretBookReport();
-//		Book SearchBook(string NameBook);
+		void SavePreBookReport();
+		void SearchBook(string NameBook);
 //		double CalculateBook(Book b);
 //		bool Pay(string AmountofMoney,string IDCreditCard,string IDBill);
 };
