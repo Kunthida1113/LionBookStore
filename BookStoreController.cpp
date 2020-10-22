@@ -228,7 +228,7 @@ void BookStoreController::ShowPreBookList();{
     	Book b;
     	size = PreBookList->size();
    	cout<<"================================================================================================================="<<endl;
-   	cout<<"\t\t\t\t\t\tBuy List"<<endl;
+   	cout<<"\t\t\t\t\t\tPreOrder List"<<endl;
     	cout<<"================================================================================================================="<<endl;
     	cout<<left<<setw(10)<<"No.";
 	cout<<left<<setw(20)<<"ID Books";
@@ -336,7 +336,7 @@ void BookStoreController::SaveBuyBookReport(){
     int size=0;
     size = BuyBookList->size();
     ofstream writeFile;
-    writeFile.open("RentBookReport.txt",ios::app);
+    writeFile.open("BuyBookReport.txt",ios::app);
     if(writeFile.is_open()){
         for(int i=1;i<=size;i++){
             m = BuyBookList->getMember(i);
@@ -385,7 +385,7 @@ void BookStoreController::SavePreBookReport(){
     int size=0;
     size = PreBookList->size();
     ofstream writeFile;
-    writeFile.open("RentBookReport.txt",ios::app);
+    writeFile.open("PreBookReport.txt",ios::app);
     if(writeFile.is_open()){
         for(int i=1;i<=size;i++){
             m = PreBookList->getMember(i);
