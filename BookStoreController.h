@@ -22,10 +22,16 @@ class BookStoreController{
 		void LoadInfoBook();
 		void SelectCategoryBook();
 		void RentBook(Member m,string IdBook);
+		void BuyBook(Member m,string IdBook);
+		void PreBook(Member m,string IdBook);
 		void ShowRentBookList();
+		void ShowBuyBookList();
+		void ShowPreBookList();
 		void SaveRentBookReport();
-/*		Book SearchBook(string NameBook);
-		double Calculate(Member m,Book b);
-		bool Pay(string AmountofMoney,string IDCreditCard,string IDBill);*/
+		void SaveBuyBookReport();
+		void SavePretBookReport();
+//		Book SearchBook(string NameBook);
+//		double CalculateBook(Book b);
+//		bool Pay(string AmountofMoney,string IDCreditCard,string IDBill);
 };
 #endif
