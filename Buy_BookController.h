@@ -5,6 +5,7 @@
 #include"Book.h"
 #include"Member.h"
 #include"DbLinkedList.h"
+#include "BookStoreController.h"
 
 class Buy_BookController{
 	public:
