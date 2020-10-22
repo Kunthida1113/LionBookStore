@@ -8,8 +8,12 @@ Book PreOrder_BookController::SerachBook(string NameBook){
 	
 }
 
-Book PreOrder_BookController::PreOrderBook(string IdBook){
+void PreOrder_BookController::PreOrderBook(string IdBook){
+	Book B;
+	PreBookList = new DbLinkedList();
 	
+ 	B = BookList->getBook(IdBook);
+    	PreBookList->AddBook(B);
 }
 
 double PreOrder_BookController::Calculate(Member m,Book b){
