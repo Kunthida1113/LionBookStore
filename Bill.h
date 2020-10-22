@@ -1,3 +1,6 @@
+#include <iostream>
+#include"DbLinkedList.h"
+
 class Bill{
 	private:
 		string IDBill;
