@@ -51,6 +51,7 @@ int main(){
             cin >> pass;
             L.SearchUser(id,pass);
             
+            
         }
     }while(menu!=3);
     
