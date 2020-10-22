@@ -29,11 +29,17 @@ class DbLinkedList
     public:
         DbLinkedList();
         ~DbLinkedList();
+        int size();
         void AddBook(Book b);
         void AddMember(Member m);
         void ShowCategory(string cate);
         Book getBook(string NameBook);
         void AddStaff(Staff s);
+        bool LoginMember(string idUser,string password); //เพิ่ม
+        bool LoginStaff(string idUser,string password); //เพิ่ม
+        void AddStaff(Staff s);
+        Member getMember(string id);//เพิ่ม
+        Staff getStaff(string id);//เพิ่ม
         bool LoginMember(string idUser,string password); //เพิ่ม
         bool LoginStaff(string idUser,string password); //เพิ่ม
 };

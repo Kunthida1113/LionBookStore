@@ -15,7 +15,9 @@ class LoginController
         DbLinkedList *StaffList;//เพิ่ม
     public:
         LoginController();
-        void SearchUser(string id, string pass);
+        bool SearchUser(string id, string pass);
+        Member getMember(string id);//เพิ่ม
+        Staff getStaff(string id);//เพิ่ม
         void readfileMember();//เพิ่ม
         void readfileStaff(); //เพิ่ม
         ~LoginController();

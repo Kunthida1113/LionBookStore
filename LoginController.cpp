@@ -4,16 +4,23 @@ LoginController::LoginController(){
     MemberList = new DbLinkedList();
     StaffList = new DbLinkedList();
 }
-void LoginController::SearchUser(string id, string pass){
-    string member;
-    string staff;
+Member LoginController::getMember(string id){
+    return MemberList->getMember(id);
+}
+Staff LoginController::getStaff(string id){
+    return StaffList->getStaff(id);
+}
+bool LoginController::SearchUser(string id, string pass){
     if(MemberList->LoginMember(id, pass) == false && StaffList->LoginStaff(id, pass) == false){
         cout << "\tinvalid Username or Password" << endl
 			<< "\t!!!!!Invalid Username or Password!!!!" << endl;
+        return false;
     }else if(MemberList->LoginMember(id, pass) == true){
         cout << "\tLogin Successfully" << endl;
+        return true;
     }else if(StaffList->LoginStaff(id, pass) == true){
         cout << "\tLogin Successfully" << endl;
+        return true;
     }
 }
 void LoginController::readfileMember(){

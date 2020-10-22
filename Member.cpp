@@ -43,10 +43,6 @@ string Member::getId(){
 }
 string Member::getPass(){
     return password;
-void Member::SetMember(string surname,string lastname,string pass){
-    Surname = surname;
-    Lastname = lastname;
-    password = pass;
 }
 Member Member::GetMember(string idMember){
 

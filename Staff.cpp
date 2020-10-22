@@ -1,36 +1,65 @@
-#include"Staff.h"
-Staff::Staff(){
-    Name = " ";
+#include "Staff.h"
+Staff::Staff()
+{
+	Name = " ";
 	Surname = " ";
 	Division = " ";
 	IdStaff = " ";
 	password = " ";
 }
-void Staff::SetStaff(string id, string pass){
+void Staff::SetStaff(string id, string pass)
+{
 	IdStaff = id;
 	password = pass;
 }
-Staff Staff::getStaff(string idUser){
+Staff Staff::getStaff(string idUser)
+{
+}
+string Staff::getId()
+{
+	return IdStaff;
+}
+string Staff::getPass()
+{
+	return password;
+}
+void Staff::showRentBookReport()
+{
+}
+void Staff::showBuyBookReport()
+{
+}
+void Staff::showPreOrderBookReport()
+{
+}
+void Staff::AddBook(string IdBook,string NameBook,string Author,string year,string cate,double RentPrice,double buyPrice,double PrePrice){
+	ofstream myfile;
+	myfile.open("All_Book.txt",ios::app);
 	
-}
-string Staff::getId(){
-    return IdStaff;
-}
-string Staff::getPass(){
-    return password;
-}
-void Staff::showRentBookReport(){
+	string cat,rent,buy,pre;
 	
-}
-void Staff::showBuyBookReport(){
+	stringstream r ;
+	r << RentPrice; 
+	rent = r.str();
 	
-}
-void Staff::showPreOrderBookReport(){
+	stringstream b ;
+	b << buyPrice; 
+	buy = b.str();
 	
-}
-void Staff::AddBook(string idBook,string NameBook,string Author){
+	stringstream p ;
+	p << PrePrice; 
+	pre = p.str();
 	
+	myfile << IdBook << "," 
+	 	   << NameBook << "," 
+		   << Author << "," 
+		   << year << ","
+		   << cate << "," 
+		   << rent << "," 
+		   << buy << ","
+		   << pre << endl;
+	myfile.close();		
 }
-void Staff::SearchUser(string idUser,string password){
-	
+void Staff::SearchUser(string idUser, string password)
+{
 }

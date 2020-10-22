@@ -26,8 +26,13 @@ class Member{
 		void readfileMember(); //เพิ่ม
 		Member(string surname,string lastname,string idMember,string pass,string type,string status,string idCreditCard);
 		Book SearchNameBook(string nameBook);
-		void SetMember(string surname,string lastname,string password);
 		Member GetMember(string idMember);
+		//Book SearchNameBook(string nameBook);
+		void SetMember(string name,string lastname,string idMember,string pass, string status);
+		Member getMember(string idMember); //เปลี่ยน G เป็น g
+		string getId(); //เพิ่ม
+		string getPass(); //เพิ่ม
+		void readfileMember(); //เพิ่ม
 		void SetType(string type);
 		bool Pay(string amountofMoney,string idCreditCard,string idBill);
 		void SearchUser(string idUser,string pass);

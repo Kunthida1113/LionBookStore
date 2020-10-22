@@ -143,10 +143,14 @@ void BookStoreController::SelectCategoryBook(){
     BookList->ShowCategory(cate);
 }
 
-Book BookStoreController::SearchBook(string NameBook){
+DbLinkedList BookStoreController::SearchBook(string NameBook){
+    DbLinkedList *s;
     Book B;
+    int size=0;
+    size = BookList->size();
     B = BookList->getBook(NameBook);
-    return B;
+    s->AddBook(B);
+    return *s;
     
    /* cout <<"===================================================================================================================================================================================================================="<<endl;
     cout <<setw(15)<<left<<"No."<<setw(20)<<left<<"ID Books"<<setw(30)<<left<<"Books Name"<<setw(15)<<left<<"Author"<<setw(15)<<left<<"Rental price"<<setw(15)<<left<<"Selling price"<<endl;

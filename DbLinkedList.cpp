@@ -34,6 +34,9 @@ DbLinkedList::~DbLinkedList(){
 	this->head = NULL;
 	this->tail = NULL;
 }
+int DbLinkedList::size(){
+	return count;
+}
 void DbLinkedList::AddBook(Book b){
 	Node *NewNode = new Node();
 	NewNode->setBook(b);
@@ -51,6 +54,20 @@ void DbLinkedList::AddBook(Book b){
 void DbLinkedList::AddMember(Member m){
 	Node *NewNode = new Node();
 	NewNode->setMember(m);
+	if(head == NULL){
+		head = NewNode;
+		tail = NewNode;
+		count++;
+	}else{
+		tail->link = NewNode;
+		NewNode->plink = tail;
+		tail = NewNode;
+		count++;
+	}
+}
+void DbLinkedList::AddStaff(Staff s){
+	Node *NewNode = new Node();
+	NewNode->setStaff(s);
 	if(head == NULL){
 		head = NewNode;
 		tail = NewNode;
@@ -95,6 +112,24 @@ Book DbLinkedList::getBook(string NameBook){
 	}
 }//ของเนมนะจ๊ะ
 
+Member DbLinkedList::getMember(string id){
+	Member m;
+	for(Node *temp=head;temp!=NULL;temp=temp->link){
+		if(temp->M.getId()==id){
+			m = temp->M;
+			return m;
+		}
+	}
+}
+Staff DbLinkedList::getStaff(string id){
+	Staff s;
+	for(Node *temp=head;temp!=NULL;temp=temp->link){
+		if(temp->S.getId()==id){
+			s = temp->S;
+			return s;
+		}
+	}
+}
 bool DbLinkedList::LoginMember(string idUser,string password){
 	Node *tmp;
 	for(tmp=head; tmp != NULL; tmp=tmp->link){

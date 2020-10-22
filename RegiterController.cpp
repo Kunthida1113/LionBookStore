@@ -15,7 +15,6 @@ void RegiterController::Register(string surname, string lastname, string passwor
         idMember = "12" + snum;
         status = "VIP";
     }
-    string filein;
 	ofstream infile;
 	infile.open("Member.dat", ios::app);
 	if(infile.fail()){

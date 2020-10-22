@@ -17,7 +17,7 @@ class BookStoreController{
 		~BookStoreController();
 		void LoadInfoBook();
 		void SelectCategoryBook();
-		Book SearchBook(string NameBook);
+		DbLinkedList SearchBook(string NameBook);
 	/*	Book RentBook(string IdBook);
 		double Calculate(Member m,Book b);
 		bool Pay(string AmountofMoney,string IDCreditCard,string IDBill);*/
