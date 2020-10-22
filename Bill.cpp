@@ -17,7 +17,7 @@
 
 	double Bill::CalculateRent(DbLinkedList * L){
 	  	int size = 0;
-	  	float total;
+	  	double total;
 	  	Book b;
 	  	size = L->size();
 	  	for(int i=0;i<size;i++){
@@ -29,7 +29,7 @@
 	  
 	double Bill::CalculateBuy(DbLinkedList * L){
 	  	int size = 0;
-	  	float total;
+	  	double total;
 	  	Book b;
 	  	size = L->size();
 	  	for(int i=0;i<size;i++){
@@ -41,7 +41,7 @@
 	  
 	double Bill::CalculatePre(DbLinkedList * L){
 	  	int size = 0;
-	  	float total;
+	  	double total;
 	  	Book b;
 	  	size = L->size();
 	  	for(int i=0;i<size;i++){
