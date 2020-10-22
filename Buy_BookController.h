@@ -1,9 +1,10 @@
 #include<iostream>
 #include<string>
+#include<fstream>
 #include<sstream>
 #include"Book.h"
 #include"Member.h"
-#include "BookStoreController.h"
+#include"DbLinkedList.h"
 
 class Buy_BookController{
 	public:

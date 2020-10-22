@@ -10,9 +10,10 @@ Book Buy_BookController::SerachBook(string NameBook){
 
 void Buy_BookController::BuyBook(string IdBook){
 	Book B;
- 	B = BookList->getBook(IdBook);
-    	buyBookList->AddBook(B);
+	BuyBookList = new DbLinkedList();
 	
+ 	B = BookList->getBook(IdBook);
+    	BuyBookList->AddBook(B);	
 }
 
 double Buy_BookController::Calculate(Book b){
