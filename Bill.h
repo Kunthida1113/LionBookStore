@@ -1,13 +1,17 @@
+#include <iostream>
+#include"DbLinkedList.h"
+#include"Book.h"
+
 class Bill{
 	private:
-			string IDBill;
-			double amountOfMoney;
+		string IDBill;
+		double amountOfMoney;
 	public:
-			bill();
-			void setBill();
-			double Calculate();
-			double CalculateRent();
-			double CalculateBuy();
-			double CalculatePre();
+		bill();
+		void setBill();
+		double Calculate();
+		double CalculateRent(DbLinkedList * L);
+		double CalculateBuy(DbLinkedList * L);
+		double CalculatePre(DbLinkedList * L);
 };
 
