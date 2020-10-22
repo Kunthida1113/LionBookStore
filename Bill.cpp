@@ -1,10 +1,10 @@
 #include "Bill.h"> 
 	Bill::Bill(){
-		IDBill = "";
+		IDBill = "00000000";
 		amountOfMoney = 0;
 	}
 
-	void Bill::setBill(){
+	void Bill::setBill(double money){
 		
 	}
 	  
@@ -20,8 +20,9 @@
 	  	double total;
 	  	Book b;
 	  	size = L->size();
+	  	
 	  	for(int i=0;i<size;i++){
-	  		b = L->getBook();
+	  		b = L->getBook(i);
 	  		total += b.getRentPrice();
 		  }
 	return total;
@@ -32,8 +33,9 @@
 	  	double total;
 	  	Book b;
 	  	size = L->size();
+	  	
 	  	for(int i=0;i<size;i++){
-	  		b = L->getBook();
+	  		b = L->getBook(i);
 	  		total += b.getBuyPrice();
 		  }
 	return total;	
@@ -44,8 +46,9 @@
 	  	double total;
 	  	Book b;
 	  	size = L->size();
+	  	
 	  	for(int i=0;i<size;i++){
-	  		b = L->getBook();
+	  		b = L->getBook(i);
 	  		total += b.getPrePrice();
 		  }
 	return total;
