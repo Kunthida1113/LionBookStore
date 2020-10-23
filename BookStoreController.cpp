@@ -107,7 +107,7 @@ void BookStoreController::LoadPreBook(){
     double tempRent,tempBuy,tempPre;
     int check=0,length=0,j=0;
     unsigned int find=0;
-    ifstream BookFile("Pre_book.dat",ios::in);
+    ifstream BookFile("Pre_book.txt",ios::in);
     if(BookFile.is_open()){
         while(getline(BookFile,line)){
             length = line.length();
