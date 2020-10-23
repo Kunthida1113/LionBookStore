@@ -85,8 +85,7 @@ void BookStoreController::LoadInfoBook(){
                          //buyPrice string to double
                         stringstream tmp2(buyPrice);
                         tmp2>>(tempBuy);
-                        //calculate prePrice
-                        tempPre = tempBuy-(tempBuy*0.25);
+
                     }//else check
                 }//if find
             }//for
@@ -153,19 +152,10 @@ void BookStoreController::LoadPreBook(){
                         year = line.substr(0,find);
                         line.erase(0,find+1);
                     }else if(check==5){
-                        rentPrice = line.substr(0,find);
-                        line.erase(0,find-1);
-                        //rentPrice string to double
-                        stringstream tmp(rentPrice);
-                        tmp>>(tempRent);
-                    }else if(check==6){
-                        buyPrice = line.substr(2,length);
-                        line.erase(0,length);
-                         //buyPrice string to double
-                        stringstream tmp2(buyPrice);
-                        tmp2>>(tempBuy);
-                        //calculate prePrice
-                        tempPre = tempBuy-(tempBuy*0.25);
+                        prePrice = line.substr(0,find);
+                        line.erase(0,find+1);
+                        stringstream tmp(prePrice);
+                        tmp>>(tempPre);
                     }
                 }
             }
