@@ -111,21 +111,3 @@
 	return total;
 	}
 	  
-	void Bill::Show_Bill(){
-		cout<<"LION  BOOKSTORE";
-		cout<<"SE09 : BURAPA U.";
-		cout<<"Receipt Bill";
-		cout<<"169 Longhaad Bangsaen Rd. Saensuk, Muang, Chonburi Thailand, 20131";
-		cout<<"Tel: (+66) 3810-2571 ";
-		cout<<"TAX ID. "<<IDBill;
-	//	cout<<"DD/MM/YY"<<Mxxxxxx;
-		cout<<"---------------------------------------------------------------------------------------------------------";
-	//	cout<<"xx"<<"bookname"<<" "<<"price"<<"BAYH."<<;
-		cout<<"AMOUNT  :  ";
-		cout<<"NET :  ";
-		cout<<"(Tax included)";
-		cout<<"RECEIVE  :  XXXX.XX  BATH";
-		cout<<"ENJOY  READING  AND  THANK  YOU  FOR  TRUST";
-	
-		
-	}

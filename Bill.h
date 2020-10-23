@@ -17,7 +17,5 @@ class Bill{
 		double CalculateRent(DbLinkedList *L);
 		double CalculateBuy(DbLinkedList *L);
 		double CalculatePre(DbLinkedList *L);
-		
-	void Show_Bill()
 };
 
