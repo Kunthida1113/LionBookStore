@@ -31,6 +31,7 @@ class BookStoreController{
 		void SaveBuyBookReport();
 		void SavePreBookReport();
 		void SearchBook(string NameBook);
+		void LoadPreBook();
 //		double CalculateBook(Book b);
 //		bool Pay(string AmountofMoney,string IDCreditCard,string IDBill);
 };
