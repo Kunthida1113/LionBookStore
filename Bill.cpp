@@ -17,7 +17,6 @@
 				}	
 				stringstream numid(id);
 				numid >> num;
-				
 				num = num++;
 				time_t date = time(0); 
 				tm*local = localtime(&date);

@@ -14,8 +14,8 @@ class Bill{
 		bill();
 		void setBill();
 		double Calculate(double money);
-		double CalculateRent(DbLinkedList * L);
-		double CalculateBuy(DbLinkedList * L);
-		double CalculatePre(DbLinkedList * L);
+		double CalculateRent(DbLinkedList *L);
+		double CalculateBuy(DbLinkedList *L);
+		double CalculatePre(DbLinkedList *L);
 };
 
