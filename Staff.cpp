@@ -1,22 +1,65 @@
-#include"Staff.h"
-Staff getStaff(string idUser){
-	
+#include "Staff.h"
+Staff::Staff()
+{
+	Name = " ";
+	Surname = " ";
+	Division = " ";
+	IdStaff = " ";
+	password = " ";
 }
-void showRentBookReport(){
-	
+void Staff::SetStaff(string id, string pass)
+{
+	IdStaff = id;
+	password = pass;
 }
-void showBuyBookReport(){
-	
+Staff Staff::getStaff(string idUser)
+{
 }
-void showPreOrderBookReport(){
-	
+string Staff::getId()
+{
+	return IdStaff;
 }
-void AddBook(string idBook,string NameBook,string Author){
-	
+string Staff::getPass()
+{
+	return password;
 }
-void Login(string idUser,string password){
-	
+void Staff::showRentBookReport()
+{
 }
-void SearchUser(string idUser,string password){
+void Staff::showBuyBookReport()
+{
+}
+void Staff::showPreOrderBookReport()
+{
+}
+void Staff::AddBook(string IdBook,string NameBook,string Author,string year,string cate,double RentPrice,double buyPrice,double PrePrice){
+	ofstream myfile;
+	myfile.open("All_Book.txt",ios::app);
 	
+	string cat,rent,buy,pre;
+	
+	stringstream r ;
+	r << RentPrice; 
+	rent = r.str();
+	
+	stringstream b ;
+	b << buyPrice; 
+	buy = b.str();
+	
+	stringstream p ;
+	p << PrePrice; 
+	pre = p.str();
+	
+	myfile << IdBook << "," 
+	 	   << NameBook << "," 
+		   << Author << "," 
+		   << year << ","
+		   << cate << "," 
+		   << rent << "," 
+		   << buy << ","
+		   << pre << endl;
+	myfile.close();		
+}
+void Staff::SearchUser(string idUser, string password)
+{
 }

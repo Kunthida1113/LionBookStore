@@ -14,7 +14,7 @@ class Staff{
 		void showRentBookReport();
 		void showBuyBookReport();
 		void showPreOrderBookReport();
-		void AddBook(string idBook,string NameBook,string Author);
+		void AddBook(string IdBook,string NameBook,string Author,string year,string cate,double RentPrice,double buyPrice,double PrePrice);
 		void Login(string idUser,string password);
 		void SearchUser(string idUser,string password);
 };
