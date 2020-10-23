@@ -1,5 +1,4 @@
 #include "LoginController.h"
-
 LoginController::LoginController(){
     MemberList = new DbLinkedList();
     StaffList = new DbLinkedList();
@@ -25,7 +24,7 @@ bool LoginController::SearchUser(string id, string pass){
 }
 void LoginController::readfileMember(){
     Member m;
-    string filein,Surname,Lastname,IdMember,password,Status;
+    string filein,Surname,Lastname,IdMember,password,Status,deta;
 	ifstream infile;
 	infile.open("Member.dat", ios::in);
 	if(infile.fail()){
@@ -42,7 +41,9 @@ void LoginController::readfileMember(){
 			    filein.erase(0, filein.find(",")+1);
             Status = filein.substr(0, filein.length());
 			    filein.erase(0, filein.length());
-            m.SetMember(Surname,Lastname,IdMember,password,Status);
+            deta = filein.substr(0, filein.length());
+			    filein.erase(0, filein.length());//เพิ่ม
+            m.SetMember(Surname,Lastname,IdMember,password,Status,deta);
             MemberList->AddMember(m);
     	}
 	}
