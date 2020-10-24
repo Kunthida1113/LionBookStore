@@ -44,15 +44,52 @@ string Member::getId(){
 string Member::getPass(){
     return password;
 }
+string Member::getIDCredit(){
+   return IdCredit;
+}
 Member Member::GetMember(string idMember){
 
 }
 void Member::SetType(string type){
 
 }
-bool Member::Pay(string amountofMoney,string idCreditCard,string idBill){
 
+bool Member::RentPay(DbLinkListed *L,string idCreditCard,Member m){
+	if(getIDMember() == idCreditCard){
+		double total = 0;
+		total = Bill::Calculate(L);
+	
+		Bill::setBill(total);
+		Bill::ShowRent_Bill(m,L);	
+	}else{
+		return false;
+	}
 }
+
+bool Member::BuyPay(DbLinkListed *L,string idCreditCard,Member m){
+	if(getIDMember() == idCreditCard){
+		double total = 0;
+		total = Bill::Calculate(L);
+	
+		Bill::setBill(total);
+		Bill::ShowBuy_Bill(m,L);	
+	}else{
+		return false;
+	}
+}
+
+bool Member::PrePay(DbLinkListed *L,string idCreditCard,Member m){
+	if(getIDMember() == idCreditCard){
+		double total = 0;
+		total = Bill::Calculate(L);
+	
+		Bill::setBill(total);
+		Bill::ShowPre_Bill(m,L);	
+	}else{
+		return false;
+	}
+}
+
 void Member::SearchUser(string idUser,string pass){
 
 }
