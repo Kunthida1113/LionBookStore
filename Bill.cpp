@@ -127,10 +127,10 @@
 		cout<<"								  Receipt Bill					"<< endl;
 		cout<<"				   169 Longhaad Bangsaen Rd. Saensuk, Muang, Chonburi Thailand, 20131		"<< endl;
 		cout<<"							     Tel: (+66) 3810-2571 					"<< endl;
-		cout<<"												TAX ID. "<< m.getId() << endl;
+		cout<<"												TAX ID. "<< IDBill << endl;
 		cout<<dateTime[0]<<"/"<<dateTime[1]<<"/"<<dateTime[2<<"/"];
-		cout<<"                                                                        "<<IDmember<<endl;
-		cout<<"---------------------------------------------------------------------------------------------------------";
+		cout<<"                                                                        "<<m.getId()<<endl;
+		cout<<"---------------------------------------------------------------------------------------------------------"<< endl;
 	for(int i = 0;i < size;i++){
 		book = L->getbook(i);
 		cout<<" 01 - "<<book.getNameBook()<<" 			  					"<<book.getRentPrice()<<"  B."<< endl;	
@@ -141,7 +141,7 @@
 		cout<<"													NET : "<<net<<endl;
 		cout<<"													(Tax included)";
 		cout<<endl;
-		cout<<"						ENJOY  READING  AND  THANK  YOU  FOR  TRUST			"endl;;
+		cout<<"						ENJOY  READING  AND  THANK  YOU  FOR  TRUST			"<<endl;
 	
 		
 	}
@@ -162,10 +162,10 @@
 		cout<<"								  Receipt Bill					"<< endl;
 		cout<<"				   169 Longhaad Bangsaen Rd. Saensuk, Muang, Chonburi Thailand, 20131		"<< endl;
 		cout<<"							     Tel: (+66) 3810-2571 					"<< endl;
-		cout<<"												TAX ID. "<< m.getId() << endl;
+		cout<<"												TAX ID. "<< IDBill << endl;
 		cout<<dateTime[0]<<"/"<<dateTime[1]<<"/"<<dateTime[2<<"/"];
-		cout<<"                                                                        "<<IDmember<<endl;
-		cout<<"---------------------------------------------------------------------------------------------------------";
+		cout<<"                                                                        "<<m.getId()<<endl;
+		cout<<"---------------------------------------------------------------------------------------------------------"<< endl;
 	for(int i = 0;i < size;i++){
 		book = L->getbook(i);
 		cout<<" 01 - "<<book.getNameBook()<<" 			  					"<<book.getBuyPrice()<<"  B."<< endl;	
@@ -176,7 +176,7 @@
 		cout<<"													NET : "<<net<<endl;
 		cout<<"													(Tax included)";
 		cout<<endl;
-		cout<<"						ENJOY  READING  AND  THANK  YOU  FOR  TRUST			"endl;;
+		cout<<"						ENJOY  READING  AND  THANK  YOU  FOR  TRUST			"<<endl;
 	
 		
 	}
@@ -197,10 +197,10 @@
 		cout<<"								  Receipt Bill					"<< endl;
 		cout<<"				   169 Longhaad Bangsaen Rd. Saensuk, Muang, Chonburi Thailand, 20131		"<< endl;
 		cout<<"							     Tel: (+66) 3810-2571 					"<< endl;
-		cout<<"												TAX ID. "<< m.getId() << endl;
+		cout<<"												TAX ID. "<< IDBill << endl;
 		cout<<dateTime[0]<<"/"<<dateTime[1]<<"/"<<dateTime[2<<"/"];
-		cout<<"                                                                        "<<IDmember<<endl;
-		cout<<"---------------------------------------------------------------------------------------------------------";
+		cout<<"                                                                        "<<m.getId()<<endl;
+		cout<<"---------------------------------------------------------------------------------------------------------"<< endl;
 	for(int i = 0;i < size;i++){
 		book = L->getbook(i);
 		cout<<" 01 - "<<book.getNameBook()<<" 			  					"<<book.getPrePrice()<<"  B."<< endl;	
@@ -211,7 +211,7 @@
 		cout<<"													NET : "<<net<<endl;
 		cout<<"													(Tax included)";
 		cout<<endl;
-		cout<<"						ENJOY  READING  AND  THANK  YOU  FOR  TRUST			"endl;;
+		cout<<"						ENJOY  READING  AND  THANK  YOU  FOR  TRUST			"<<endl;
 	
 		
 	}
