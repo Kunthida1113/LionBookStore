@@ -57,7 +57,7 @@ void Member::SetType(string type){
 bool Member::RentPay(DbLinkListed *L,string idCreditCard,Member m){
 	if(getIDMember() == idCreditCard){
 		double total = 0;
-		total = Bill::Calculate(L);
+		total = Bill::CalculateRent(L);
 	
 		Bill::setBill(total);
 		Bill::ShowRent_Bill(m,L);	
@@ -69,7 +69,7 @@ bool Member::RentPay(DbLinkListed *L,string idCreditCard,Member m){
 bool Member::BuyPay(DbLinkListed *L,string idCreditCard,Member m){
 	if(getIDMember() == idCreditCard){
 		double total = 0;
-		total = Bill::Calculate(L);
+		total = Bill::CalculateBuy(L);
 	
 		Bill::setBill(total);
 		Bill::ShowBuy_Bill(m,L);	
@@ -81,7 +81,7 @@ bool Member::BuyPay(DbLinkListed *L,string idCreditCard,Member m){
 bool Member::PrePay(DbLinkListed *L,string idCreditCard,Member m){
 	if(getIDMember() == idCreditCard){
 		double total = 0;
-		total = Bill::Calculate(L);
+		total = Bill::CalculatePre(L);
 	
 		Bill::setBill(total);
 		Bill::ShowPre_Bill(m,L);	
