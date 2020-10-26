@@ -1,24 +1,29 @@
-#include <iostream>
-#include"DbLinkedList.h"
-#include"Book.h"
-#include<sstream>
-#include <ctime>
-#include <time.h>
+#ifndef BILL_H
+#define BILL_H
+#include<iostream>
 #include<fstream>
-
+#include<sstream>
+#include<ctime>
+#include<string>
+#include"Member.h"
+#include "DbLinkedList.h"
+using namespace std;
 class Bill{
 	private:
-		string IDBill;
-		double amountOfMoney;
+			string IDBill;
 	public:
-		bill();
-		void setBill();
-		double Calculate(double money);
-		double CalculateRent(DbLinkedList *L);
-		double CalculateBuy(DbLinkedList *L);
-		double CalculatePre(DbLinkedList *L);
- 		void ShowRent_Bill(Member m,DbLinkedList * L);
- 		void ShowBuy_Bill(Member m,DbLinkedList * L);
- 		void ShowPret_Bill(Member m,DbLinkedList * L);
+			Bill();
+			double getAmountOfMoney();
+			void setIDBill();
+			void writeFile(string id,double money);
+			string runIDBill();
+			double Calculate(double money);
+			double CalculateRent(DbLinkedList * L);
+			double CalculateBuy(DbLinkedList * L);
+			double CalculatePre(DbLinkedList * L);
+			void ShowRentBill(Member m,DbLinkedList * L);
+			void ShowBuyBill(Member m,DbLinkedList * L);
+			void ShowPreBill(Member m,DbLinkedList * L);
+			void ShowRegisterBill(Member m,double money);
 };
-
+#endif

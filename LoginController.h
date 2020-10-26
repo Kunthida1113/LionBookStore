@@ -20,6 +20,7 @@ class LoginController
         Staff getStaff(string id);//เพิ่ม
         void readfileMember();//เพิ่ม
         void readfileStaff(); //เพิ่ม
+        void removeMember();
         ~LoginController();
 };
 #endif

@@ -24,10 +24,5 @@ class Book{
 		double getRentPrice();
 		double getBuyPrice();
 		double getPrePrice();
-		Book SelectCategoryBook();
-		Book SearchBook(string nameBook);
-		Book RentBook(string idBook);
-		Book BuyBook(string idBook);
-		Book PreOrderBook(string idBook);    
 };
 #endif

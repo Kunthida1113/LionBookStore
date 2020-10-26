@@ -1,20 +1,4 @@
-#include "Staff.h"
-Staff::Staff()
-{
-	Name = " ";
-	Surname = " ";
-	Division = " ";
-	IdStaff = " ";
-	password = " ";
-}
-void Staff::SetStaff(string id, string pass)
-{
-	IdStaff = id;
-	password = pass;
-}
-Staff Staff::getStaff(string idUser)
-{
-}
+#include"Staff.h"
 string Staff::getId()
 {
 	return IdStaff;
@@ -23,43 +7,19 @@ string Staff::getPass()
 {
 	return password;
 }
-void Staff::showRentBookReport()
+void Staff::SetStaff(string id, string pass)
 {
+	IdStaff = id;
+	password = pass;
 }
-void Staff::showBuyBookReport()
-{
+void Staff::showRentBookReport(int m){
+	R.showRentBookReport(m);
 }
-void Staff::showPreOrderBookReport()
-{
+void Staff::showBuyBookReport(int m){
+	B.showBuyBookReport(m);
 }
-void Staff::AddBook(string IdBook,string NameBook,string Author,string year,string cate,double RentPrice,double buyPrice,double PrePrice){
-	ofstream myfile;
-	myfile.open("All_Book.txt",ios::app);
-	
-	string cat,rent,buy,pre;
-	
-	stringstream r ;
-	r << RentPrice; 
-	rent = r.str();
-	
-	stringstream b ;
-	b << buyPrice; 
-	buy = b.str();
-	
-	stringstream p ;
-	p << PrePrice; 
-	pre = p.str();
-	
-	myfile << IdBook << "," 
-	 	   << NameBook << "," 
-		   << Author << "," 
-		   << year << ","
-		   << cate << "," 
-		   << rent << "," 
-		   << buy << ","
-		   << pre << endl;
-	myfile.close();		
+void Staff::showPreOrderBookReport(int m){
+	P.showPreOrderBookReport(m);
 }
-void Staff::SearchUser(string idUser, string password)
-{
-}
+
+

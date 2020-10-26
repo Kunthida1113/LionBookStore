@@ -1,4 +1,4 @@
-00001962,A Wrinkle in Time,Madeleine L'Engle,1962,315.50,1263.00
+00001962,A Wrinkle in Time I,Madeleine L'Engle,1962,315.50,1263.00
 00011964,Charlie and the Chocolate Factory,Roald Dahl,1964,296.75,1105.50
 00021993,The Batman Adventures: Mad Love,Paul Dini,1993,268.50,1074.00
 00032001,The Art of Spirited Away,Hayao Miyazaki,2001,277.75,1121.50
@@ -33,7 +33,7 @@
 01122009,Dr. Seuss's Beginner Book Collection,Dr.Seuss,2009,289.00,1250.50
 01131964,The Giving Tree,Shel Silverstein,1964,42.00,265.00
 01142007,The Classic Treasury of Aesop's Fables,Aesop,2007,65.50,302.25
-01151964,A Wrinkle in Time,Madeleine L'Engle,1964,65.50,302.50
+01151964,A Wrinkle in Time II,Madeleine L'Engle,1964,65.50,302.50
 01162017,Bridge to Terabithia,Katherine Paterson,2017,31.50,325.25
 01172019,Bear Came Along,Richard T. Morris,2019,125.25,678.50
 01182018,Hello Lighthouse Hardcover,Sophie Blackall,2018,101.00,632.75
@@ -63,7 +63,7 @@
 03021991,Amelia Earhart,Janet Hardy,1991,98.25,598.75
 03031997,John F Kennedy,Anne Collins,1997,252.75,998.75
 03041998,The Selfish Giant,Oscar Wilde,1998,53.75,474.00
-03051999,Sleeping Beauty,Sue Arengo,1999,8 4.59,465.75
+03051999,Sleeping Beauty,Sue Arengo,1999,84.59,465.75
 03062000,Troll and Other Stories,Sarah Walker,2000,57.25,357.75
 03072011,The Bad House,Paul Shipton,2011,80.75,442.50
 03082017,Eat Pray Love,Elizabeth Gilbert,2017,123.25,568.75
@@ -197,3 +197,83 @@
 09172019,Technology for Success and Shelly Cashman Series Microsoft Office 365 & Office 2019,Jennifer T. Campbell,2019,466.25,1351.00
 09182014,Milady Standard Nail Technology,Milady,2014,222.50,903.50
 09192020,Become an Effective Software Engineering Manager,Dr. Stanier,2020,1100.00,1246.00
+110020,Thoughts of Dog,Matt Nelson,Oct 27/2020,0,0,468.50
+110120,The History of the World in Comics, Adrienne Barman,Dec 1/2020,0,0,406.00
+110220,She-Hulk,Paul Pelletier,Nov 10/2020,0,0,1250.00
+110320,Peachy-Butt Girls (Seikô),Bosshi,Nov 19/2020,0,0,512.50
+110420,Paper. Pen. Pandemic.: Viral Cartoons around the Globe,Benevento,Nov 26/2020,0,0,875.50
+110520,BB3X: Baby Blues,Jerry Scott,Oct 27/2020,0,0,625.25
+110620,Sink or Swim,Isabel Ryan,Nov 15/2020,0,0,312.50
+110720,Avatar: The Last Airbender, Gurihiru,Oct 27/2020,0,0,703.75
+110820,Rick and Morty Book Five: Deluxe Edition (5),Kyle Starks,Oct 27/2020,0,0,1564.25
+110921,Birth of a Beetle,Daniel Herman,Jan 12/2021,0,0,1501.75
+220020,The Dark Secret,Mike Holmes,Dec 29/2020,0,0,406.25
+220121,Riconoscimento: Recognition, Maya Daniels,Jan 13/2021,0,0,1248.00
+220220,Outlander Knitting,Kate Atherley,Oct 27/2020,0,0,781.50
+220320,Principles of Virology,Jane Flint,Nov 3/2020,0,0,5630.00
+220420,Tasha's Cauldron of Everything,Wizards RPG Team,Nov 17/2020,0,0,937.25
+220520,Dance of Death,Helen McCloy,Oct 29/2020,0,0,406.25
+220620,Death Fleet,Scare Street,Nov 2/2020,0,0,468.75
+220720,Lost and Found, Nita Round,Nov 2/2020,0,0,306.25
+220820,The Last Correspondent,Soraya M. Lane,Nov 1/2020,0,0,343.75
+330020,Medical Device Technologies,Gail Baura,Nov 30/2020,0,0,3910.00
+330120,Digital Theatre,Nadja Masura,Nov 22/2020,0,0,3440.00
+330321,Singing Sappho,Melina Esse,Jan 11/2021,0,0,1407.00
+330620,ICT in Education and Implications for the Belt and Road Initiative,Hui Zhang,Nov 22/2020,0,0,4660.75
+330720,Information and Communication Technology,Parikshit N. Mahalle,Nov 22/2020,0,0,8414.00
+330820,Drying in the Dairy Industry,Pierre Schuck,Dec 1/2020,0,0,6256.00
+440020,Saving Freedom,Joe Scarborough,Nov 24/2020,0,0,938.00
+440120,BLAZE: Er ist dein Feuer,J. S. Wonda,Oct 24/2020,0,0,226.50
+440220,Ich will dich ganz,Trinity Taylor,Oct 31/2020,0,0,1125.75
+440320,Daddy Ford,Chris McHart,Nov 6/2020,0,0,500.00
+440420,Slowly Love,Samantha J. Green,Nov 6/2020,0,0,391.00
+440520,Roam: Poems of Zhang Guan (Chinese Edition),Guan Zhang,Nov 1/2020,0,0,500.25
+440620,LOLITA LA LOOSE: Pas de job pas de mec,Gemma. M,Oct 23/2020,0,0,1110.50
+440820,Les Gardiens d'Apophis,R.B Devaux,Nov 30/2020,0,0,532.25
+440920,Les treize desserts de Noël,Joffrey Gabriel,Nov 1/2020,0,0,385.75
+550020,Osamu Tezukas Werke: Seine Mangas,Claudia Wendt,Oct 30/2020,0,0,312.25
+550220,Sorrowville,Henning Mützlitz,Oct 31/2020,0,0,387.25
+550320,Malabares,I Silvestre,Oct 31/2020,0,0,781.50
+550420,Las bicicletas son para el verano,Fernando F. Gómez,Dec 10/2020,0,0,236.00
+550520,Masterpieces of Fantasy Art,Dian Hanson,Oct 28/2020,0,0,6252.00
+550620,Art of Soul,Pixar,Oct 27/2020,0,0,1250.50
+550720,Il grande dizionario dei tatuaggi,Trent Aitken-Smith,Nov 5/2020,0,0,1287.25
+550820,Il grande libro dei quiz sul cinema,Marta Pantaleo,Nov 5/2020,0,0,187.25
+550920,Poesia contra el bloqueo,Gabriele Frasca,Nov 2/2020,0,0,281.00
+660020,The Amateur Hour: A History of College Teaching in America,Jonathan Zimmerman,Oct 27/2020,0,0,1093.25
+660120,Big Data on Campus: Data Analytics and Decision Making,Henry Y. Zheng,Nov 3/2020,0,0,1249.75
+660220,Favored Not Forgotten Study Guide,Adam McCain,Nov 3/2020,0,0,468.75
+660320,Data Science in Education Using R,Emily A. Freer,Oct 27/2020,0,0,1531.25
+660420,The Education of Delhomme,Nancy Burkhalter,Oct 6/2020,0,0,530.25
+660521,The Trauma-Sensitive School,Gerald W. Neal,Jan 16/2021,0,0,1249.50
+660620,Education for Knowing,Frank K. Fair,Oct 30/2020,0,0,1876.00
+660720,1620: A Critical Response to the 1619 Project,Peter W. Wood,Nov 17/2020,0,0,765.50
+660820,Harold Gets An F,Calvin Reynolds,Nov 6/2020,0,0,500.00
+770020,Illustoria: For Creative Kids and Their Grownups,Elizabeth Haidle,Nov 19/2020,0,0,500.00
+770120,Vogue® Knitting Project Journal,Vogue Knitting Magazine,Nov 3/2020,0,0,248.50
+770221,Dada Magazines: The Making of a Movement,Emily Hage,Jan 14/2021,0,0,3594.50
+770320,Magazine Georges n°49 - Cinéma (French Edition),Simon Bailly,Nov 20/2020,0,0,248.00
+770420,The Girl with the Self-Esteem Issues,Rosie Mercado,Dec 29/2020,0,0,531.00
+770520,Una sombra en la penumbra,J. D. Lisbona,Oct 23/2020,0,0,248.00
+770620,Die Wirecard-Story,Melanie Bergermann,Nov 4/2020,0,0,593.75
+770820,Jérusalem Magazine,Bernard Lecomte,Nov 5/2020,0,0,248.50
+770920,Graou n°21 (French Edition),Gwé Gwé,Nov 20, 2020,0,0,594.50
+880020,Ready to Teach: Macbeth, Amy Staniforth,Nov 17/2020,0,0,561.00
+880120,Hate in the Homeland,Cynthia Miller-Idriss,Oct 27/2020,0,0,936.25
+880221,Chatbots,Philipp Kleinmanns,Jan 4/2021,0,0,1187.50
+880421,Mosquitoes of the World,Richard C. Wilkerson,Jan 12/2021,0,0,2969.75
+880520,The Meaning of Thought,Alex Englander,Nov 16/2020,0,0,1094.00
+880621,The FBI Way: Inside the Bureau's Code of Excellence,Frank Figliuzzi,Jan 5/2021,0,0,874.00
+880720,Around the World in (More Than) 80 Days,Larry Alex Taunton,Oct 27/2020,0,0,875.20
+880820,Decoding Theory of Knowledge for the IB Diploma,Wendy Heydorn,Nov 30/2020,0,0,1074.75
+880920,Pandemics and Viruses,Heather E. Quinlan,Nov 1/2020,0,0,717.50
+990020,Path to Health,Susan Goe,Nov 9/2020,0,0,1093.79
+990120,Coding and Payment Guide for Behavioral Health Services 2021,Optum360º,Dec 18/2020,0,0,5812.75
+990220,Visualizing Health and Healthcare Data,Lindsay Betzendahl,Nov 10/2020,0,0,1248.50
+990320,Fast This Way,Dave Asprey,Jan 19/2021,0,0,906.25
+990520,Mayo Clinic Diabetes,The Editors of Mayo Clinic,Oct 30/2020,0,0,437.25
+990620,Borderline Personality Disorder For Dummies,Laura L. Smith,Nov 10/2020,0,0,557.25
+990720,Happy Habits,Karen Salmansohn,Dec 15/2020,0,0,468.50
+990920,Reflections of My Life,Paul Kuypers,Dec 10/2020,0,0,717.25
+
+

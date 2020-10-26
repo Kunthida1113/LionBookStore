@@ -33,17 +33,19 @@ class DbLinkedList
         int size();
         void AddBook(Book b);
         void AddMember(Member m);
-        void AddInfo(Member m,Book b);
-        void ShowCategory(string cate);
-        void ShowBookList();
         void AddStaff(Staff s);
-        bool LoginMember(string idUser,string password); //เพิ่ม
-        bool LoginStaff(string idUser,string password); //เพิ่ม
+        void AddInfo(Member m,Book b);
         Member getMember(string id);//เพิ่ม
         Staff getStaff(string id);//เพิ่ม
+        void ShowRentCategory(string cate);
+        void ShowBuyCategory(string cate);
+        void ShowPreCategory(string cate);
+        void ShowBookList();
         Book getBook(string idBook);
-        Book getBookName(string NameBook);
         Book getBook(int index);
         Member getMember(int index);
+        bool LoginMember(string idUser,string password); //เพิ่ม
+        bool LoginStaff(string idUser,string password); //เพิ่ม
+        void remove();
 };
 #endif

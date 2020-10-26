@@ -9,9 +9,7 @@
   # the build target executable:
   TARGET = main
   FILEMAIN = main.cpp
-  CLASS = Member.cpp Book.cpp Staff.cpp DbLinkedList.cpp LoginController.cpp RegiterController.cpp BookStoreController.cpp
-  CLASS = Member.cpp Book.cpp Staff.cpp DbLinkedList.cpp Buy_BookController.cpp PreOrder_BookController.cpp RentBookController.cpp
-  CLASS = Member.cpp Book.cpp Staff.cpp DbLinkedList.cpp LoginController.cpp RegiterController.cpp
+  CLASS = Member.cpp Book.cpp Staff.cpp DbLinkedList.cpp LoginController.cpp RegisterController.cpp BookStoreController.cpp Bill.cpp RentBookReport.cpp BuyBookReport.cpp PreOrderBookReport.cpp 
   all: 
 	$(CC) $(FILEMAIN) $(CLASS) $(CFLAGS) -o $(TARGET)
 

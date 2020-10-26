@@ -1,98 +1,49 @@
 #include "Member.h"
 Member::Member(){
-    Surname = " ";    
+    Name = " ";    
     Lastname = " ";
     IdMember = " ";
     password = " ";
     Type = " ";
     Status = " ";
     IdCredit = " ";
+    dateOfRegis = " ";
+    dateOfExpire = " ";
 }
-Member::Member(string name,string lastname,string idMember,string pass, string status){
-       Surname = name ;
-       Lastname = lastname;
-       IdMember = idMember;
-       password = pass;
-       Status = status;
-    Surname = "";
-    Lastname = "";
-    IdMember = "";
-    password = "";
-    Type = "";
-    Status = "";
-    IdCredit = "";
-}
-Member::Member(string surname,string lastname,string idMember,string pass,string type,string status,string idCreditCard){
-  
-}
-Book Member::SearchNameBook(string nameBook){
-
-}
-void Member::SetMember(string name,string lastname,string idMember,string pass, string status){
-    Surname = name ;
+Member::Member(string name,string lastname,string idMember,string pass,string type,string status,string idCreditCard,string dateReg,string dateEx){
+    Name = name;    
     Lastname = lastname;
     IdMember = idMember;
     password = pass;
+    Type = type;
     Status = status;
+    IdCredit = idCreditCard;
+    dateOfRegis = dateReg;
+    dateOfExpire = dateEx;
 }
-Member Member::getMember(string IdMember){
-    
+void Member::SetMember(string name,string lastname,string idMember,string pass,string type, string status,string idCreditCard,string dateReg,string dateEx){
+    Name = name ;
+    Lastname = lastname;
+    IdMember = idMember;
+    password = pass;
+    Type = type;
+    Status = status;
+    IdCredit = idCreditCard;
+    dateOfRegis = dateReg;
+    dateOfExpire = dateEx;    
 }
 string Member::getId(){
     return IdMember;
 }
+string Member::getName(){
+    return Name;
+}
 string Member::getPass(){
     return password;
 }
-string Member::getIDCredit(){
-   return IdCredit;
-}
-Member Member::GetMember(string idMember){
-
+string Member::getCredit(){
+    return IdCredit;
 }
 void Member::SetType(string type){
-
-}
-
-bool Member::RentPay(DbLinkListed *L,string idCreditCard,Member m){
-	if(getIDMember() == idCreditCard){
-		double total = 0;
-		total = Bill::CalculateRent(L);
-	
-		Bill::setBill(total);
-		Bill::ShowRent_Bill(m,L);	
-	}else{
-		return false;
-	}
-}
-
-bool Member::BuyPay(DbLinkListed *L,string idCreditCard,Member m){
-	if(getIDMember() == idCreditCard){
-		double total = 0;
-		total = Bill::CalculateBuy(L);
-	
-		Bill::setBill(total);
-		Bill::ShowBuy_Bill(m,L);	
-	}else{
-		return false;
-	}
-}
-
-bool Member::PrePay(DbLinkListed *L,string idCreditCard,Member m){
-	if(getIDMember() == idCreditCard){
-		double total = 0;
-		total = Bill::CalculatePre(L);
-	
-		Bill::setBill(total);
-		Bill::ShowPre_Bill(m,L);	
-	}else{
-		return false;
-	}
-}
-
-void Member::SearchUser(string idUser,string pass){
-
-}
-Book Member::RentBooks(string idBook){
-    
+    Type = type;
 }

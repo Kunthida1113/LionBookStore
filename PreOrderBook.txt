@@ -1,0 +1,99 @@
+000020,My Fantabulous Brain: Learning Helps Me Grow!,Julia Cook,Nov 5/2020,311.00
+000120,The Monks Make Amends,Christopher Tupa,Dec 7/2020,467.25
+000220,Chasing Love,Dr. Sean McDowell,Dec 1/2020,468.50
+000321,Meals With Jesus,Ed Drew,Jan 1/2021,406.00
+000520,5 More Sleeps ‘til Christmas,Jimmy Fallon,Oct 27/2020,531.00
+000621,Bronco and Friends: A Party to Remember,Tim Tebow,Jan 5/2021,562.25
+000720,It's a Wonderful Life: The Illustrated Holiday Classic,Paul Ruditis,Oct 27/2020,592.25
+000820,The World Needs Who You Were Made to Be,Joanna Gaines,Nov 10/2020,624.75
+000920,Meditation Station,Susan B. Katz,Nov 3/2020,529.75
+110020,Thoughts of Dog,Matt Nelson,Oct 27/2020,468.50
+110120,The History of the World in Comics, Adrienne Barman,Dec 1/2020,406.00
+110220,She-Hulk,Paul Pelletier,Nov 10/2020,1250.00
+110320,Peachy-Butt Girls (Seikô),Bosshi,Nov 19/2020,512.50
+110420,Paper. Pen. Pandemic.: Viral Cartoons around the Globe,Benevento,Nov 26/2020,875.50
+110520,BB3X: Baby Blues,Jerry Scott,Oct 27/2020,625.25
+110620,Sink or Swim,Isabel Ryan,Nov 15/2020,312.50
+110720,Avatar: The Last Airbender, Gurihiru,Oct 27/2020,703.75
+110820,Rick and Morty Book Five: Deluxe Edition (5),Kyle Starks,Oct 27/2020,1564.25
+110921,Birth of a Beetle,Daniel Herman,Jan 12/2021,1501.75
+220020,The Dark Secret,Mike Holmes,Dec 29/2020,406.25
+220121,Riconoscimento: Recognition, Maya Daniels,Jan 13/2021,1248.00
+220220,Outlander Knitting,Kate Atherley,Oct 27/2020,781.50
+220320,Principles of Virology,Jane Flint,Nov 3/2020,5630.00
+220420,Tasha's Cauldron of Everything,Wizards RPG Team,Nov 17/2020,937.25
+220520,Dance of Death,Helen McCloy,Oct 29/2020,406.25
+220620,Death Fleet,Scare Street,Nov 2/2020,468.75
+220720,Lost and Found, Nita Round,Nov 2/2020,306.25
+220820,The Last Correspondent,Soraya M. Lane,Nov 1/2020,343.75
+220920,Eclipsed Legacy,Raw Book Editing,Nov 1/2020
+330020,Medical Device Technologies,Gail Baura,Nov 30/2020,3910.00
+330120,Digital Theatre,Nadja Masura,Nov 22/2020,3440.00
+330220,The Truth Society,Noelle M Liston,Nov 15/2020
+330321,Singing Sappho,Melina Esse,Jan 11/2021,1407.00
+330420,Nanotechnology,Vikas Mittal,Nov 15/2020
+330520,The Coming Cyber War,Marc Crudgington,Oct 29/2020
+330620,ICT in Education and Implications for the Belt and Road Initiative,Hui Zhang,Nov 22/2020,4660.75
+330720,Information and Communication Technology,Parikshit N. Mahalle,Nov 22/2020,8414.00
+330820,Drying in the Dairy Industry,Pierre Schuck,Dec 1/2020,6256.00
+330920,Carbon Membrane Technology,Izumi Kumakiri,Nov 26/2020
+440020,Saving Freedom,Joe Scarborough,Nov 24/2020,938.00
+440120,BLAZE: Er ist dein Feuer,J. S. Wonda,Oct 24/2020,226.50
+440220,Ich will dich ganz,Trinity Taylor,Oct 31/2020,1125.75
+440320,Daddy Ford,Chris McHart,Nov 6/2020,500.00
+440420,Slowly Love,Samantha J. Green,Nov 6/2020,391.00
+440520,Roam: Poems of Zhang Guan (Chinese Edition),Guan Zhang,Nov 1/2020,500.25
+440620,LOLITA LA LOOSE: Pas de job pas de mec,Gemma. M,Oct 23/2020,1110.50
+440720,Le Portail (French Edition),Sealeha,Oct 30/020,791.25
+440820,Les Gardiens d'Apophis,R.B Devaux,Nov 30/2020,532.25
+440920,Les treize desserts de Noël,Joffrey Gabriel,Nov 1/2020,385.75
+550020,Osamu Tezukas Werke: Seine Mangas,Claudia Wendt,Oct 30/2020,312.25
+550220,Sorrowville,Henning Mützlitz,Oct 31/2020,387.25
+550220,Räume machen Leute,Wolfgang Schneider,Oct 23/2020,437.50
+550320,Malabares,I Silvestre,Oct 31/2020,781.50
+550420,Las bicicletas son para el verano,Fernando F. Gómez,Dec 10/2020,236.00
+550520,Masterpieces of Fantasy Art,Dian Hanson,Oct 28/2020,6252.00
+550620,Art of Soul,Pixar,Oct 27/2020,1250.50
+550720,Il grande dizionario dei tatuaggi,Trent Aitken-Smith,Nov 5/2020,1287.25
+550820,Il grande libro dei quiz sul cinema,Marta Pantaleo,Nov 5/2020,187.25
+550920,Poesia contra el bloqueo,Gabriele Frasca,Nov 2/2020,281.00
+660020,The Amateur Hour: A History of College Teaching in America,Jonathan Zimmerman,Oct 27/2020,1093.25
+660120,Big Data on Campus: Data Analytics and Decision Making,Henry Y. Zheng,Nov 3/2020,1249.75
+660220,Favored Not Forgotten Study Guide,Adam McCain,Nov 3/2020,468.75
+660320,Data Science in Education Using R,Emily A. Freer,Oct 27/2020,1531.25
+660420,The Education of Delhomme,Nancy Burkhalter,Oct 6/2020,530.25
+660521,The Trauma-Sensitive School,Gerald W. Neal,Jan 16/2021,1249.50
+660620,Education for Knowing,Frank K. Fair,Oct 30/2020,1876.00
+660720,1620: A Critical Response to the 1619 Project,Peter W. Wood,Nov 17/2020,765.50
+660820,Harold Gets An F,Calvin Reynolds,Nov 6/2020,500.00
+660920,Sophia and Alex Make Friends at School,Damon Danielson,Oct 24/2020\
+770020,Illustoria: For Creative Kids and Their Grownups,Elizabeth Haidle,Nov 19/2020,500.00
+770120,Vogue® Knitting Project Journal,Vogue Knitting Magazine,Nov 3/2020,248.50
+770221,Dada Magazines: The Making of a Movement,Emily Hage,Jan 14/2021,3594.50
+770320,Magazine Georges n°49 - Cinéma (French Edition),Simon Bailly,Nov 20/2020,248.00
+770420,The Girl with the Self-Esteem Issues,Rosie Mercado,Dec 29/2020,531.00
+770520,Una sombra en la penumbra,J. D. Lisbona,Oct 23/2020,248.00
+770620,Die Wirecard-Story,Melanie Bergermann,Nov 4/2020,593.75
+770720,Mörderisches Ostfriesland IV,Klaus-Peter Wolf,374.75
+770820,Jérusalem Magazine,Bernard Lecomte,Nov 5/2020,248.50
+770920,Graou n°21 (French Edition),Gwé Gwé,Nov 20, 2020,594.50
+880020,Ready to Teach: Macbeth, Amy Staniforth,Nov 17/2020,561.00
+880120,Hate in the Homeland,Cynthia Miller-Idriss,Oct 27/2020,936.25
+880221,Chatbots,Philipp Kleinmanns,Jan 4/2021,1187.50
+880421,Mosquitoes of the World,Richard C. Wilkerson,Jan 12/2021,2969.75
+880520,The Meaning of Thought,Alex Englander,Nov 16/2020,1094.00
+880621,The FBI Way: Inside the Bureau's Code of Excellence,Frank Figliuzzi,Jan 5/2021,874.00
+880720,Around the World in (More Than) 80 Days,Larry Alex Taunton,Oct 27/2020,875.20
+880820,Decoding Theory of Knowledge for the IB Diploma,Wendy Heydorn,Nov 30/2020,1074.75
+880920,Pandemics and Viruses,Heather E. Quinlan,Nov 1/2020,717.50
+990020,Path to Health,Susan Goe,Nov 9/2020,1093.79
+990120,Coding and Payment Guide for Behavioral Health Services 2021,Optum360º,Dec 18/2020,5812.75
+990220,Visualizing Health and Healthcare Data,Lindsay Betzendahl,Nov 10/2020,1248.50
+990320,Fast This Way,Dave Asprey,Jan 19/2021,906.25
+990421,The Power Plate Diet,Erin Oprea,an 12/2021
+990520,Mayo Clinic Diabetes,The Editors of Mayo Clinic,Oct 30/2020,437.25
+990620,Borderline Personality Disorder For Dummies,Laura L. Smith,Nov 10/2020,557.25
+990720,Happy Habits,Karen Salmansohn,Dec 15/2020,468.50
+990820,When Are We Going to Teach Health ?,Duncan Van Dusen,Nov 10, 2020,1024.75
+990920,Reflections of My Life,Paul Kuypers,Dec 10/2020,717.25
+

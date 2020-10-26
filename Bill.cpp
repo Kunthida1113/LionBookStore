@@ -1,217 +1,220 @@
-#include "Bill.h"> 
-	Bill::Bill(){
-		IDBill = "00000000";
-		amountOfMoney = 0;
+#include "Bill.h"
+Bill::Bill(){
+	IDBill = "";
+}
+void Bill::setIDBill(){
+	string id;
+	id = runIDBill();
+	IDBill = id;
+}
+void Bill::writeFile(string id,double money){
+	ofstream writeFile;
+	writeFile.open("Bill.txt",ios::app);
+	if(writeFile.fail()){
+		cout<<"Can not open file."<<endl;
+	}else{
+		writeFile << id <<","<<money<<endl;
 	}
-
-	void Bill::setBill(double money){
-	int dateTime[2];
-	int num,ID;
-	string mount,year,id,billnum,line;
-	string bill = "";
-			
-		time_t DateTime = time(0);
-		tm* local_time = localtime(&DateTime);
-		dateTime[0] = 1 + local_time->tm_mon;
-		dateTime[1] = 1900 + local_time->tm_year;
-			
-		stringstream m;
-		m << dateTime[0];
-		mount = m.str();
-			
-		stringstream y;
-		y << dateTime[1];
-		year = y.str();
-		
-		fstream file_bill;
-		file_bill.open("Bill.dat",ios::in | ios::app);
-		if(myfile.is_open()){
-		while(file_bill >> id){
-			bill = id.substr(0,2);			
+	writeFile.close();	
+}
+string Bill::runIDBill(){
+	int num = 1000;
+	string line,money,id,idBill;
+	ifstream infile;
+	infile.open("Bill.txt",ios::in);
+	if(infile.fail()){
+		cout<<"Can not open file."<<endl;
+	}else{
+		while (getline(infile,line))
+		{
+			id = line.substr(0,line.find(','));
+			line.erase(0,line.find(','));
+			money = line.substr(0,line.length());
+			line.erase(0,line.length());
+			num++;
 		}
-			stringstream geek(bill);
-			geek >> num;	
-			
-			ID = num+ 1;
-			if(ID < 10){
-				stringstream i;
-				i << ID;
-				billnum = "0"+i.str();
-			}else{
-				stringstream i;
-				i << ID;
-				billnum = i.str();
-			}
-		file_bill.close();
-		
-						
-		IDBill = billnum+mount+year;
-//		cout <<IDBill;
-		////////////////////////////////////////////////////////
-		stringstream mo;
-		mo << money;
-		M = mo.str();
-		
-		file_bill.open("Bill.dat",ios::app);
-			file_bill << IDBill << "," << M << endl;
-			
-		file_bill.close();
-				
-		}else{
-			cout << "FAIL" <<endl;
+	}
+	num+=1;
+	stringstream temp;
+	temp<<num;
+	idBill = temp.str();
+	return idBill;
+}
+double Bill::Calculate(double money){
+	double total =0,VAT=0.07;
+	total = money;
+	total =  total + (total*VAT);
+	return total;
+}
+double Bill::CalculateRent(DbLinkedList * L){
+	int size = 0;
+	double total=0,price=0;
+	Book b;
+	size = L->size();
+	for(int i=1;i<=size;i++){
+		b = L->getBook(i);
+		price = b.getRentPrice();
+		total += price;
+	}
+	return total;
+}
+double Bill::CalculateBuy(DbLinkedList * L){
+	int size = 0;
+	double total=0,price=0;
+	Book b;
+	size = L->size();
+	for(int i=1;i<=size;i++){
+		b = L->getBook(i);
+		price = b.getBuyPrice();
+		total += price;
+	}
+	return total;	  	
+}	  
+double Bill::CalculatePre(DbLinkedList *L){
+	int size = 0;
+	double total=0,price=0;
+	Book b;
+	size = L->size();
+	for(int i=1;i<=size;i++){
+		b = L->getBook(i);
+		price = b.getPrePrice();
+		total += price;
+	}
+	return total;	  	
+}
+	  
+void Bill::ShowRentBill(Member m,DbLinkedList * L){
+	int dateTime[3],size=0;
+	time_t DateTime = time(0);
+	tm* local_time = localtime(&DateTime);
+	dateTime[0] = local_time->tm_mday;
+	dateTime[1] = 1 + local_time->tm_mon;
+	dateTime[2] = 1900 + local_time->tm_year;
+	Book book;
+	size = L->size();
+	string id = runIDBill();
+		///////////////////////////////////////////////////////////////////////////////////////////////////
+	    cout<<"---------------------------------------------------------------------------------------------------------" << endl;
+	    cout<<"\t\t\t\t\t\t         LION BOOKSTORE     "<< endl;
+	    cout<<"---------------------------------------------------------------------------------------------------------" << endl;
+	    cout<<"\t\t\t\t\t\t         SE#9 : BURAPHA U.     "<< endl;
+	    cout<<"\t\t\t\t\t\t         Receipt Bill     "<< endl;
+	    cout<<"\t\t\t169 Longhaad Bangsaen Rd. Saensuk, Muang, Chonburi Thailand, 20131  "<< endl;
+	    cout<<"\t\t\t\t     	           Tel: (+66) 3810-2571      "<< endl;
+	    cout<<"\t\t\t\t                       TAX ID: "<< id << endl; 
+		cout<<dateTime[0]<<"/"<<dateTime[1]<<"/"<<dateTime[2];
+		cout<<"                                                                          IDMember: "<< m.getId() <<endl;
+		cout<<"---------------------------------------------------------------------------------------------------------"<< endl;
+	    for(int i = 1;i <= size;i++){
+			book = L->getBook(i);
+			cout<<i<<" - "<<book.getNameBook()<<" 			  					"<<book.getRentPrice()<<"  BATH"<< endl;	
 		}
-		
-	}
-	double Bill::Calculate(){
-	 	double total;
-	 	double vat;
-	 	vat = 0.07;
-	 	total = 777.00;
-	 	total = total*vat;
-	 	return total;
-	}
-
-	double Bill::CalculateRent(DbLinkedList * L){
-	  	int size = 0;
-	  	double total;
-	  	Book b;
-	  	size = L->size();
-	  	
-	  	for(int i=0;i<size;i++){
-	  		b = L->getBook(i);
-	  		total += b.getRentPrice();
-		  }
-	return total;
-	}
-	  
-	double Bill::CalculateBuy(DbLinkedList * L){
-	  	int size = 0;
-	  	double total;
-	  	Book b;
-	  	size = L->size();
-	  	
-	  	for(int i=0;i<size;i++){
-	  		b = L->getBook(i);
-	  		total += b.getBuyPrice();
-		  }
-	return total;	
-	}
-	  
-	double Bill::CalculatePre(DbLinkedList * L){
-	  	int size = 0;
-	  	double total,money,net;
-	  	string line,id;
-	  	Book b;
-	  	size = L->size();
-	  	
-	  	for(int i=0;i<size;i++){
-	  		b = L->getBook(i);
-	  		total += b.getPrePrice();
-		  }
-	return total;
-	}
-	  
-	void Bill::ShowRent_Bill(Member m,DbLinkedList * L){
-		int dateTime[3],size;
-		time_t DateTime = time(0);
-		tm* local_time = localtime(&DateTime);
-		dateTime[0] = local_time->tm_mday;
-		dateTime[1] = 1 + local_time->tm_mon;
-		dateTime[2] = 1900 + local_time->tm_year;
-		Book book;
-		size = L->size();
-		
+		cout<<"											AMOUNT : "<<CalculateRent(L)<<" BATH" << endl;
+		double net =0;
+		net= CalculateRent(L)+(CalculateRent(L)*0.07); 
+		cout<<"											NET : "<<net<<endl;
+		cout<<"	 									    (Tax included)";
+		cout<<endl;
+		cout<<"						ENJOY  READING  AND  THANK  YOU  FOR  TRUST			"<<endl;
+		writeFile(id,net);
+}
+void Bill::ShowBuyBill(Member m,DbLinkedList * L){
+	int dateTime[3],size;
+	time_t DateTime = time(0);
+	tm* local_time = localtime(&DateTime);
+	dateTime[0] = local_time->tm_mday;
+	dateTime[1] = 1 + local_time->tm_mon;
+	dateTime[2] = 1900 + local_time->tm_year;
+	Book book;
+	size = L->size();
+	string id = runIDBill();
 		///////////////////////////////////////////////////////////////////////////////////////////////////
-		cout<<"								LION  BOOKSTORE					"<< endl;
-		cout<<"							      	SE09 : BURAPHA U.					"<< endl;
-		cout<<"								  Receipt Bill					"<< endl;
-		cout<<"				   169 Longhaad Bangsaen Rd. Saensuk, Muang, Chonburi Thailand, 20131		"<< endl;
-		cout<<"							     Tel: (+66) 3810-2571 					"<< endl;
-		cout<<"												TAX ID. "<< IDBill << endl;
-		cout<<dateTime[0]<<"/"<<dateTime[1]<<"/"<<dateTime[2<<"/"];
-		cout<<"                                                                        "<<m.getId()<<endl;
-		cout<<"---------------------------------------------------------------------------------------------------------"<< endl;
-	for(int i = 0;i < size;i++){
-		book = L->getbook(i);
-		cout<<" 01 - "<<book.getNameBook()<<" 			  					"<<book.getRentPrice()<<"  B."<< endl;	
+	    cout<<"---------------------------------------------------------------------------------------------------------" << endl;
+	    cout<<"\t\t\t\t\t\t         LION BOOKSTORE     "<< endl;
+	    cout<<"---------------------------------------------------------------------------------------------------------" << endl;
+	    cout<<"\t\t\t\t\t\t         SE#9 : BURAPHA U.     "<< endl;
+	    cout<<"\t\t\t\t\t\t         Receipt Bill     "<< endl;
+	    cout<<"\t\t\t169 Longhaad Bangsaen Rd. Saensuk, Muang, Chonburi Thailand, 20131  "<< endl;
+	    cout<<"\t\t\t\t     	           Tel: (+66) 3810-2571      "<< endl;
+	    cout<<"\t\t\t\t                       TAX ID: "<< id << endl; 
+		cout<<dateTime[0]<<"/"<<dateTime[1]<<"/"<<dateTime[2];
+		cout<<"                                                                          IDMember: "<< m.getId() <<endl;
+		cout<<"---------------------------------------------------------------------------------------------------------";
+	for(int i = 1;i <= size;i++){
+		book = L->getBook(i);
+		cout<<i<<" - "<<book.getNameBook()<<" 			  					"<<book.getBuyPrice()<<"  B."<< endl;	
 	}
-		
-		cout<<"												    AMOUNT : "<<amountOfMoney<<" BATH" << endl;
-		net = amountOfMoney*0.07; 
+		cout<<"												    AMOUNT : "<<CalculateBuy(L)<<" BATH" << endl;
+		double net =0;
+		net= CalculateBuy(L)+(CalculateBuy(L)*0.07); 
 		cout<<"													NET : "<<net<<endl;
 		cout<<"													(Tax included)";
 		cout<<endl;
 		cout<<"						ENJOY  READING  AND  THANK  YOU  FOR  TRUST			"<<endl;
+		writeFile(id,net);
+}
 	
-		
-	}
-	
-	void Bill::ShowBuy_Bill(Member m,DbLinkedList * L){
-		int dateTime[3],size;
-		time_t DateTime = time(0);
-		tm* local_time = localtime(&DateTime);
-		dateTime[0] = local_time->tm_mday;
-		dateTime[1] = 1 + local_time->tm_mon;
-		dateTime[2] = 1900 + local_time->tm_year;
-		Book book;
-		size = L->size();
-		
+void Bill::ShowPreBill(Member m,DbLinkedList * L){
+	int dateTime[3],size;
+	time_t DateTime = time(0);
+	tm* local_time = localtime(&DateTime);
+	dateTime[0] = local_time->tm_mday;
+	dateTime[1] = 1 + local_time->tm_mon;
+	dateTime[2] = 1900 + local_time->tm_year;
+	Book book;
+	size = L->size();
+	string id = runIDBill();	
 		///////////////////////////////////////////////////////////////////////////////////////////////////
-		cout<<"								LION  BOOKSTORE					"<< endl;
-		cout<<"							      	SE09 : BURAPHA U.					"<< endl;
-		cout<<"								  Receipt Bill					"<< endl;
-		cout<<"				   169 Longhaad Bangsaen Rd. Saensuk, Muang, Chonburi Thailand, 20131		"<< endl;
-		cout<<"							     Tel: (+66) 3810-2571 					"<< endl;
-		cout<<"												TAX ID. "<< IDBill << endl;
-		cout<<dateTime[0]<<"/"<<dateTime[1]<<"/"<<dateTime[2<<"/"];
-		cout<<"                                                                        "<<m.getId()<<endl;
-		cout<<"---------------------------------------------------------------------------------------------------------"<< endl;
-	for(int i = 0;i < size;i++){
-		book = L->getbook(i);
-		cout<<" 01 - "<<book.getNameBook()<<" 			  					"<<book.getBuyPrice()<<"  B."<< endl;	
+	    cout<<"---------------------------------------------------------------------------------------------------------" << endl;
+	    cout<<"\t\t\t\t\t\t         LION BOOKSTORE     "<< endl;
+	    cout<<"---------------------------------------------------------------------------------------------------------" << endl;
+	    cout<<"\t\t\t\t\t\t         SE#9 : BURAPHA U.     "<< endl;
+	    cout<<"\t\t\t\t\t\t         Receipt Bill     "<< endl;
+	    cout<<"\t\t\t169 Longhaad Bangsaen Rd. Saensuk, Muang, Chonburi Thailand, 20131  "<< endl;
+	    cout<<"\t\t\t\t     	           Tel: (+66) 3810-2571      "<< endl;
+	    cout<<"\t\t\t\t                       TAX ID: "<< id << endl; 
+		cout<<dateTime[0]<<"/"<<dateTime[1]<<"/"<<dateTime[2];
+		cout<<"                                                                          IDMember: "<< m.getId() <<endl;
+		cout<<"---------------------------------------------------------------------------------------------------------";
+	for(int i = 1;i <= size;i++){
+		book = L->getBook(i);
+		cout<<i<<" - "<<book.getNameBook()<<" 			  					"<<book.getPrePrice()<<"  B."<< endl;	
 	}
 		
-		cout<<"												    AMOUNT : "<<amountOfMoney<<" BATH" << endl;
-		net = amountOfMoney*0.07; 
+		cout<<"												    AMOUNT : "<<CalculatePre(L)<<" BATH" << endl;
+		double net =0;
+		net= CalculateBuy(L)+(CalculateBuy(L)*0.07); 
 		cout<<"													NET : "<<net<<endl;
 		cout<<"													(Tax included)";
 		cout<<endl;
 		cout<<"						ENJOY  READING  AND  THANK  YOU  FOR  TRUST			"<<endl;
-	
-		
-	}
-	
-	void Bill::ShowPre_Bill(Member m,DbLinkedList * L){
-		int dateTime[3],size;
-		time_t DateTime = time(0);
-		tm* local_time = localtime(&DateTime);
-		dateTime[0] = local_time->tm_mday;
-		dateTime[1] = 1 + local_time->tm_mon;
-		dateTime[2] = 1900 + local_time->tm_year;
-		Book book;
-		size = L->size();
-		
-		///////////////////////////////////////////////////////////////////////////////////////////////////
-		cout<<"								LION  BOOKSTORE					"<< endl;
-		cout<<"							      	SE09 : BURAPHA U.					"<< endl;
-		cout<<"								  Receipt Bill					"<< endl;
-		cout<<"				   169 Longhaad Bangsaen Rd. Saensuk, Muang, Chonburi Thailand, 20131		"<< endl;
-		cout<<"							     Tel: (+66) 3810-2571 					"<< endl;
-		cout<<"												TAX ID. "<< IDBill << endl;
-		cout<<dateTime[0]<<"/"<<dateTime[1]<<"/"<<dateTime[2<<"/"];
-		cout<<"                                                                        "<<m.getId()<<endl;
-		cout<<"---------------------------------------------------------------------------------------------------------"<< endl;
-	for(int i = 0;i < size;i++){
-		book = L->getbook(i);
-		cout<<" 01 - "<<book.getNameBook()<<" 			  					"<<book.getPrePrice()<<"  B."<< endl;	
-	}
-		
-		cout<<"												    AMOUNT : "<<amountOfMoney<<" BATH" << endl;
-		net = amountOfMoney*0.07; 
-		cout<<"													NET : "<<net<<endl;
-		cout<<"													(Tax included)";
-		cout<<endl;
-		cout<<"						ENJOY  READING  AND  THANK  YOU  FOR  TRUST			"<<endl;
-	
-		
-	}
+		writeFile(id,net);
+}
+void Bill::ShowRegisterBill(Member m,double money){
+	int day, mon, year;
+	time_t now = time(0);
+	tm *ltm = localtime(&now);
+	day = ltm->tm_mday;
+	mon = 1 + ltm->tm_mon;
+	year = 1900 + ltm->tm_year;  
+	string id = runIDBill();
+	///////////////////////////////////////////////////////////////////////////////////////////////////
+	cout<<"---------------------------------------------------------------------------------------------------------" << endl;
+	cout<<"\t\t\t\t\t\t         LION BOOKSTORE     "<< endl;
+	cout<<"---------------------------------------------------------------------------------------------------------" << endl;
+	cout<<"\t\t\t\t\t\t         SE#9 : BURAPHA U.     "<< endl;
+	cout<<"\t\t\t\t\t\t         Receipt Bill     "<< endl;
+	cout<<"\t\t\t169 Longhaad Bangsaen Rd. Saensuk, Muang, Chonburi Thailand, 20131  "<< endl;
+	cout<<"\t\t\t\t     	           Tel: (+66) 3810-2571      "<< endl;
+	cout<<"\t\t\t\t                       TAX ID: "<< id << endl; 
+	cout<<"Date: "<<day<<"/"<<mon<<"/"<<year;  
+	cout<<"                                                                          IDMember: "<< m.getId() <<endl;
+	cout<<"---------------------------------------------------------------------------------------------------------" << endl;
+	cout<<"Register VIP Lion  Bookstore                                                 "<< money<<" BATH"<< endl;        
+	cout<<"\t\t\t\t\t\t\t\t\t     AMOUNT  : "<< money<<" BATH" << endl;
+	cout<<"\t\t\t\t\t\t\t\t\t     TAX: 7%" << endl;
+	cout<<"\t\t\t\t\t\t\t\t\t     NET : " << Calculate(money) <<endl;
+	cout<<"\t\t\t\tENJOY  READING  AND  THANK  YOU  FOR  TRUST   " <<endl;
+	cout<<"---------------------------------------------------------------------------------------------------------" << endl;
+	writeFile(id,Calculate(money));
+}

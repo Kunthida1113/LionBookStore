@@ -7,38 +7,25 @@
 using namespace std;
 class Member{
 	private:
-		string Surname;
+		string Name;
 		string Lastname;		
-		string Lastname;
 		string IdMember;
 		string password;
 		string Type;
-		string Status; //จะมีดีไหม
+		string Status; 
 		string IdCredit;
+		string dateOfRegis;
+		string dateOfExpire;
 	public:
 		Member();
-		Member(string surname,string lastname,string idMember,string pass, string status);
-		Book SearchNameBook(string nameBook);
-		void SetMember(string name,string lastname,string idMember,string pass, string status);
-		Member getMember(string idMember); //เปลี่ยน G เป็น g
-		string getId(); //เพิ่ม
-		string getPass(); //เพิ่ม
-		void readfileMember(); //เพิ่ม
-		Member(string surname,string lastname,string idMember,string pass,string type,string status,string idCreditCard);
-		Book SearchNameBook(string nameBook);
-		Member GetMember(string idMember);
-		//Book SearchNameBook(string nameBook);
-		void SetMember(string name,string lastname,string idMember,string pass, string status);
-		Member getMember(string idMember); //เปลี่ยน G เป็น g
-		string getId(); //เพิ่ม
-		string getPass(); //เพิ่ม
-		string getIdCredit();
-		void readfileMember(); //เพิ่ม
+		Member(string name,string lastname,string idMember,string pass,string type,string status,string idCreditCard,string dateReg,string dateEx);
+		void SetMember(string name,string lastname,string idMember,string pass,string type, string status,string idCreditCard,string dateReg,string dateEx);
+		Member getMember(string idMember);
+		string getId(); 
+		string getName();
+		string getPass(); 
+		string getCredit(); 
+		void readfileMember();
 		void SetType(string type);
-		bool RentPay(DbLinkListed *L,string idCreditCard,string idBill);
-		bool BuyPay(DbLinkListed *L,string idCreditCard,string idBill);
-		bool PrePay(DbLinkListed *L,string idCreditCard,string idBill);
-		void SearchUser(string idUser,string pass);
-		Book RentBooks(string idBook);
 };
 #endif

@@ -43,19 +43,3 @@ double Book::getBuyPrice(){
 double Book::getPrePrice(){
     return PrePrice;
 }
-
-Book Book::SelectCategoryBook(){
-
-}
-Book Book::SearchBook(string nameBook){
-
-}
-Book Book::RentBook(string idBook){
-
-}
-Book Book::BuyBook(string idBook){
-
-}
-Book Book::PreOrderBook(string idBook){
-
-}  
