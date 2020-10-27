@@ -376,10 +376,10 @@ int main(){
                     cout << "                 Menu                " << endl;
                     cout << "=====================================" << endl;
                     cout << " 1. Search Book" << endl
-                        // << " 2. Rent Book" << endl
-                         << " 2. Buy Book" << endl
-                         << " 3. Pre-Order Book" << endl
-                         << " 4. Log Out" << endl;
+                         << " 2. Rent Book" << endl
+                         << " 3. Buy Book" << endl
+                         << " 4. Pre-Order Book" << endl
+                         << " 5. Log Out" << endl;
                     cout << "=====================================" << endl;
                     cout << "Select Menu: " ;
                     cin >> mainMenu;
@@ -389,7 +389,7 @@ int main(){
                         cin.ignore();
                         getline(cin,namebook);
                         ST.SearchBook(namebook);
-                    }/*else if(mainMenu==2){
+                    }else if(mainMenu==2){
                         int selRent=0;
                         string again="";
                         do{
@@ -441,26 +441,10 @@ int main(){
                                 ST.RentBook(M,idBook);
                                 cout<<"Do you want to rent more books? (Y/N) :"; //Y back to rent book 
                                 cin>>again;
-                                if(again=="N"){
-                                    do{
-                                        cout << " --------------------------------------------------------- " <<endl;
-                                        cout << " =================Pay Rent Book=================== " <<endl;
-                                        cout << "Enter ID CreditCard : " ;
-                                        cin >> Credit;
-                                        statusPay = ST.PayRentBook(M,Credit);
-                                        if(statusPay==true){
-                                            cout << " --------------------------------------------------------- " <<endl;
-                                            cout<<"\t\t\t\t\tSuccess!!!"<<endl;
-                                            cout << " --------------------------------------------------------- " <<endl;
-                                            ST.SaveRentBookReport();
-                                        }
-                                    }while(statusPay!=true);                                    
-                                    selRent = 3;
-                                }
                             }
                             //selRent == 3 back main menu
                         }while(selRent != 3);
-                    }*/else if(mainMenu==2){
+                    }else if(mainMenu==3){
                         //Buy Book
                         int selBuy=0;
                         string again;
@@ -531,7 +515,7 @@ int main(){
                                 }
                             }
                         }while(selBuy != 3 && again != "N");
-                    }else if(mainMenu==3){
+                    }else if(mainMenu==4){
                         //Pre-Order Book
                         int selPre=0;
                         string again;
@@ -600,10 +584,10 @@ int main(){
                                 }
                             }
                         }while(selPre != 3 && again != "N");
-                    }else if(mainMenu!=4){
+                    }else if(mainMenu!=5){
                         cout << "Please fill in the correct information!!!!!" << endl;
                     }
-                }while(mainMenu!=4);
+                }while(mainMenu!=5);
             }else if(idCheck=="13"){
                 int menuStaff=0;
                 S = L.getStaff(id);
